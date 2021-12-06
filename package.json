@@ -1,0 +1,13 @@
+{
+  "name": "gallery-test",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@explorablegraph/explorable": "github:ExplorableGraph/explorable#12a32ae7",
+    "sharp": "0.29.1"
+  },
+  "scripts": {
+    "build": "eg copy app/src, files/dist",
+    "start": "eg serve"
+  }
+}
