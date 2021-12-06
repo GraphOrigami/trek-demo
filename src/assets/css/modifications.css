@@ -1,0 +1,18 @@
+/* Modifications to the Dolomia template CSS */
+
+.gallery-carousel {
+  display: grid;
+  justify-content: center;
+}
+
+.carousel-strip {
+  display: grid;
+  gap: 25px;
+  grid-auto-flow: column;
+}
+
+.carousel-strip img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 134px;
+}
