@@ -16,3 +16,14 @@
   object-fit: cover;
   width: 134px;
 }
+
+.showcase-carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+#page-content #showcase-treks .showcase-carousel .item:hover {
+  margin-top: inherit;
+  transform: translateY(-10px);
+}
