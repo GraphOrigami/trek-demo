@@ -2,9 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Trek Demo</title>
 
     <!-- Bootstrap -->
@@ -321,144 +319,44 @@
               </div>
               <div class="col-md-12 padding-leftright-null">
                 <section class="showcase-carousel text">
+                  {{#each this}}
                   <!--  Single Trip  -->
                   <div class="item">
                     <div class="showcase-trek">
-                      <span class="read"> from 820$ </span>
-                      <img src="assets/img/trip1.jpg" alt="" />
+                      <span class="read">from {{price}}</span>
+                      <img src="{{image}}" alt="" />
                       <div class="content text-center">
                         <div class="row margin-leftright-null">
                           <div class="meta">
                             <div class="col-md-4 padding-leftright-null">
-                              <h3>12</h3>
+                              <h3>{{days}}</h3>
                               <h4>Days</h4>
                             </div>
                             <div class="col-md-4 padding-leftright-null">
-                              <h3>10</h3>
+                              <h3>{{groupSize}}</h3>
                               <h4>Max Group Size</h4>
                             </div>
                             <div class="col-md-4 padding-leftright-null">
-                              <h3>Hight</h3>
+                              <h3>{{difficulty}}</h3>
                               <h4>Difficulty</h4>
                             </div>
                           </div>
                           <div class="category">
-                            <h3>Trekking Expedition</h3>
+                            <h3>{{category}}</h3>
                           </div>
                           <div class="info">
                             <div class="col-md-12 padding-leftright-null">
-                              <h6 class="heading">Everest Base Camp</h6>
-                              <p class="margin-null">Ama Dablam, Nepal</p>
+                              <h6 class="heading">{{name}}</h6>
+                              <p class="margin-null">{{destination}}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <a href="single-trek.html" class="link"></a>
+                      <a href="treks/{{trekId}}.html" class="link"></a>
                     </div>
                   </div>
                   <!--  END Single Trip  -->
-                  <div class="item">
-                    <div class="showcase-trek">
-                      <span class="read"> from 320$ </span>
-                      <img src="assets/img/trip2.jpg" alt="" />
-                      <div class="content text-center">
-                        <div class="row margin-leftright-null">
-                          <div class="meta">
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>3</h3>
-                              <h4>Days</h4>
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>10</h3>
-                              <h4>Max Group Size</h4>
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>Hight</h3>
-                              <h4>Difficulty</h4>
-                            </div>
-                          </div>
-                          <div class="category">
-                            <h3>Hiking Expedition</h3>
-                          </div>
-                          <div class="info">
-                            <div class="col-md-12 padding-leftright-null">
-                              <h6 class="heading">Monte Bianco</h6>
-                              <p class="margin-null">Courmayeur, France</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="single-trek-2.html" class="link"></a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="showcase-trek">
-                      <span class="read"> from 120$ </span>
-                      <img src="assets/img/trip3.jpg" alt="" />
-                      <div class="content text-center">
-                        <div class="row margin-leftright-null">
-                          <div class="meta">
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>1</h3>
-                              <h4>Days</h4>
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>20</h3>
-                              <h4>Max Group Size</h4>
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>Medium</h3>
-                              <h4>Difficulty</h4>
-                            </div>
-                          </div>
-                          <div class="category">
-                            <h3>Canyoning Expedition</h3>
-                          </div>
-                          <div class="info">
-                            <div class="col-md-12 padding-leftright-null">
-                              <h6 class="heading">Valley of Piave</h6>
-                              <p class="margin-null">Dolomiti, Italy</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="single-trek.html" class="link"></a>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="showcase-trek">
-                      <span class="read"> from 550$ </span>
-                      <img src="assets/img/trip4.jpg" alt="" />
-                      <div class="content text-center">
-                        <div class="row margin-leftright-null">
-                          <div class="meta">
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>8</h3>
-                              <h4>Days</h4>
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>5</h3>
-                              <h4>Max Group Size</h4>
-                            </div>
-                            <div class="col-md-4 padding-leftright-null">
-                              <h3>Easy</h3>
-                              <h4>Difficolty</h4>
-                            </div>
-                          </div>
-                          <div class="category">
-                            <h3>Trekking Expedition</h3>
-                          </div>
-                          <div class="info">
-                            <div class="col-md-12">
-                              <h6>Eolie Island</h6>
-                              <p class="margin-null">Eolie Island, Italy</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <a href="single-trek-2.html" class="link"></a>
-                    </div>
-                  </div>
+                  {{/each}}
                 </section>
               </div>
             </div>
