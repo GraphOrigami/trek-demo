@@ -1,3 +1,4 @@
+---
 trekId: eolie
 name: Eolie Island
 destination: Eolie Island, Italy
@@ -12,3 +13,4 @@ distance: 52 km
 guide: Berkely Keary
 avatar: assets/img/hiker3.jpg
 country: England
+---

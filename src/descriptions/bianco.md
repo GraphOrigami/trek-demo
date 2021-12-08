@@ -1,3 +1,4 @@
+---
 trekId: bianco
 name: Monte Bianco
 destination: Courmayeur, France
@@ -12,3 +13,6 @@ distance: 38 km
 guide: Dylan Stocker
 avatar: assets/img/hiker1.jpg
 country: Australia
+---
+
+Monte Bianco is **great**.

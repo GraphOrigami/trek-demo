@@ -1,3 +1,4 @@
+---
 trekId: piave
 name: Valley of Piave
 destination: Dolomiti, Italy
@@ -12,3 +13,4 @@ distance: 35 km
 guide: Gilbertina Patrick
 avatar: assets/img/hiker2.jpg
 country: Italy
+---
