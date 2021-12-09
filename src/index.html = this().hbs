@@ -1,4 +1,8 @@
-{{#>page}}
+---
+title: Trek Demo
+trekFronts = map(descriptions, front):
+---
+{{#>page areaIsHome=true}}
 <!--  Slider  -->
 <div id="flexslider-nav" class="fullpage-wrap small">
   <ul class="slides">
@@ -9,8 +13,7 @@
           start your adventures
         </h1>
         <h2 class="white flex-animation">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          <br />Veniam, facilis.
+          Guided expeditions to go beyond your limits
         </h2>
         <a
           href="#"
@@ -174,12 +177,12 @@
           Featured trips
         </h2>
         <p class="heading center grey margin-bottom-null">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          for 2022 and 2023
         </p>
       </div>
       <div class="col-md-12 padding-leftright-null">
         <section class="showcase-carousel text">
-          {{#each this}}
+          {{#each trekFronts}}
           <!--  Single Trip  -->
           <div class="item">
             <div class="showcase-trek">

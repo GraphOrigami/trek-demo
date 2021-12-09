@@ -1,5 +1,10 @@
 /* Modifications to the Dolomia template CSS */
 
+header.fixed-top {
+  position: sticky;
+  top: 0;
+}
+
 .gallery-carousel {
   display: grid;
   justify-content: center;

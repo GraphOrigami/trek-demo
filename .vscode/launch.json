@@ -10,6 +10,7 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/node_modules/@explorablegraph/explorable/src/eg/eg.js",
+      "cwd": "${workspaceFolder}/src",
       "runtimeArgs": ["--preserve-symlinks"],
       "args": ["serve"]
     }
