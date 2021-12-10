@@ -1,21 +1,20 @@
 ---
 trekId: torres
 name: Torres del Paine
-subhead: Turquoise waters, glaciers, and towering granite horns
+subhead: Glaciers and towering granite horns
 destination: Coquimbo, Chile
 category: Hiking Expedition
 image: assets/img/torres.jpg
 days: 7
 groupSize: 10
 difficulty: High
-price: $1320
+price: $1920
 date: 2022-06-08
 distance: 38 km
 guide: Dylan Stocker
 avatar: assets/img/hiker1.jpg
 country: Australia
-introduction: |
-  Torres del Paine National Park is part of the Sistema Nacional de Áreas Silvestres Protegidas del Estado de Chile (National System of Protected Forested Areas of Chile). In 2013, it measured approximately 181,414 hectares. It is one of the largest and most visited parks in Chile. The park averages around 252,000 visitors a year, of which 54% are foreign tourists, who come from many countries all over the world. It is also part of the End of the World Route, a tourist scenic route.
+introduction: Torres del Paine National Park is part of the Sistema Nacional de Áreas Silvestres Protegidas del Estado de Chile (National System of Protected Forested Areas of Chile). In 2013, it measured approximately 181,414 hectares. It is one of the largest and most visited parks in Chile. The park averages around 252,000 visitors a year, of which 54% are foreign tourists, who come from many countries all over the world. It is also part of the End of the World Route, a tourist scenic route.
 ---
 
 The park is one of the 11 protected areas of the Magallanes Region and Chilean Antarctica (together with four national parks, three national reserves, and three national monuments). Together, the protected forested areas comprise about 51% of the land of the region.
