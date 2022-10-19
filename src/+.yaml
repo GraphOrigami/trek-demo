@@ -1,0 +1,3 @@
+html = map(descriptions, mdHtml, '.md', '.html'):
+treks = map(html, trek.ori):
+index.html = index.ori():

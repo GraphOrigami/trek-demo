@@ -4,7 +4,7 @@ name: The Patagonia Coast
 subhead: Striking coastal mountains and vibrant sea life
 destination: Patagnoia, Chile
 category: Kayaking Expedition
-image: assets/img/patagonia.jpg
+image: /assets/img/patagonia.jpg
 days: 1
 groupSize: 20
 difficulty: Medium
@@ -12,7 +12,7 @@ price: $2120
 date: 2022-08-28
 distance: 90 km
 guide: Gilbertina Patrick
-avatar: assets/img/hiker2.jpg
+avatar: /assets/img/hiker2.jpg
 country: Italy
 introduction: The Patagonia region encompasses the southern end of South America, governed by Argentina and Chile. The region comprises the southern section of the Andes Mountains, lakes, fjords, and glaciers in the west and deserts, tablelands and steppes to the east. Patagonia is bounded by the Pacific Ocean on the west, the Atlantic Ocean to the east, and many bodies of water that connect them, such as the Strait of Magellan, the Beagle Channel, and the Drake Passage to the south.
 ---

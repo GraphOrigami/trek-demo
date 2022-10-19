@@ -1,8 +1,17 @@
 ---
 title: Trek Demo
-trekMetaData = map(descriptions, front):
+areaIsHome: true
+
+# Read all the trek files from the descriptions folder.
+#
+# Convert them to graphs using meta(), which will have the effect of defining a
+# `parent` property for them. This in turn ensures that the resulting graph is
+# part of the scope chain, so that values in the data can be referenced below
+# in template expressions.
+#
+trekData = map(descriptions, meta):
 ---
-{{#>page areaIsHome=true}}
+{{#page.ori}}
 <!--  Slider  -->
 <div id="flexslider-nav" class="fullpage-wrap small">
   <ul class="slides">
@@ -154,7 +163,7 @@ trekMetaData = map(descriptions, front):
       </div>
       <div class="col-md-12 padding-leftright-null">
         <section class="showcase-carousel text">
-          {{#each trekMetaData}}
+          {{#map trekData}}
           <!--  Single Trip  -->
           <div class="item">
             <div class="showcase-trek">
@@ -191,7 +200,7 @@ trekMetaData = map(descriptions, front):
             </div>
           </div>
           <!--  END Single Trip  -->
-          {{/each}}
+          {{/map}}
         </section>
       </div>
     </div>
@@ -417,4 +426,4 @@ trekMetaData = map(descriptions, front):
   </div>
   <!-- END Section News -->
 </div>
-{{/page}}
+{{/page.ori}}

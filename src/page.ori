@@ -6,27 +6,27 @@
     <title>{{title}}</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
 
     <!-- Optional theme -->
     <link
       rel="stylesheet"
-      href="assets/css/bootstrap/bootstrap-theme.min.css"
+      href="/assets/css/bootstrap/bootstrap-theme.min.css"
     />
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/modifications.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/modifications.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="assets/css/ionicons.min.css" />
+    <link rel="stylesheet" href="/assets/css/ionicons.min.css" />
 
-    <link rel="stylesheet" href="assets/css/puredesign.css" />
+    <link rel="stylesheet" href="/assets/css/puredesign.css" />
 
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
   </head>
 
   <body class="pace-done">
@@ -38,15 +38,15 @@
           <!--  Header Logo  -->
           <div id="logo">
             <a class="navbar-brand" href="/">
-              <img src="assets/img/logo.png" class="normal" alt="logo" />
-              <img src="assets/img/logo@2x.png" class="retina" alt="logo" />
+              <img src="/assets/img/logo.png" class="normal" alt="logo" />
+              <img src="/assets/img/logo@2x.png" class="retina" alt="logo" />
               <img
-                src="assets/img/logo_white.png"
+                src="/assets/img/logo_white.png"
                 class="normal white-logo"
                 alt="logo"
               />
               <img
-                src="assets/img/logo_white@2x.png"
+                src="/assets/img/logo_white@2x.png"
                 class="retina white-logo"
                 alt="logo"
               />
@@ -120,7 +120,7 @@
 
       <!--  Page Content, class footer-fixed if footer is fixed  -->
       <div id="page-content" class="header-static footer-fixed">
-      {{> @partial-block }}
+{{@text}}
       </div>
       
       <!--  Footer. Class fixed for fixed footer  -->

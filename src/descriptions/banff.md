@@ -4,7 +4,7 @@ name: Banff
 subhead: Rugged alpine landscapes and crystal lakes in Banff National Park
 destination: Alberta, Canada
 category: Trekking Expedition
-image: assets/img/banff.jpg
+image: /assets/img/banff.jpg
 days: 8
 groupSize: 5
 difficulty: Easy
@@ -12,7 +12,7 @@ price: $950
 date: 2022-07-09
 distance: 52 km
 guide: Berkely Keary
-avatar: assets/img/hiker3.jpg
+avatar: /assets/img/hiker3.jpg
 country: England
 introduction: Banff National Park is Canada's oldest national park, established in 1885. Located in Alberta's Rocky Mountains, 110–180 kilometres (68–112 mi) west of Calgary, Banff encompasses 6,641 square kilometres (2,564 sq mi) of mountainous terrain, with many glaciers and ice fields, dense coniferous forest, and alpine landscapes.
 ---

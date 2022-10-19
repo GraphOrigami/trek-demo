@@ -5,14 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "pwa-node",
+      "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "serve",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/node_modules/@explorablegraph/explorable/src/eg/eg.js",
-      "cwd": "${workspaceFolder}/src",
+      "program": "${workspaceFolder}/node_modules/@graphorigami/origami/src/cli/cli.js",
       "runtimeArgs": ["--preserve-symlinks"],
-      "args": ["serve"]
+      "args": ["serve virtual/src"]
     }
   ]
 }

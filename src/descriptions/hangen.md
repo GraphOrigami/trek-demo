@@ -1,10 +1,10 @@
 ---
 trekId: hangen
-name: Hang Én – Swallow Cave
-subhead: Explore one of the largest caves on Earth
+name: Hang Én (Swallow Cave)
+subhead: Go deep — in one of the largest caves on Earth
 destination: Quảng Bình Province, Vietnam
 category: Caving Expedition
-image: assets/img/hangen.jpg
+image: /assets/img/hangen.jpg
 days: 12
 groupSize: 10
 difficulty: High
@@ -12,7 +12,7 @@ price: $1820
 date: 2022-06-03
 distance: 45 km
 guide: Nadean Metcalfe
-avatar: assets/img/hiker4.jpg
+avatar: /assets/img/hiker4.jpg
 country: Vietnam
 introduction: Hang Én is the third largest cave in the world, after Hang Sơn Đoòng in the same national park, and Deer Cave in Malaysia. The cave has its own jungle, waters, beach, and climate. There are three known entrances to Hang Én.
 ---

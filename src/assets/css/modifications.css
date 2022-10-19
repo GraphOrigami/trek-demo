@@ -32,3 +32,12 @@ header.fixed-top {
   margin-top: inherit;
   transform: translateY(-10px);
 }
+
+/*
+#page-content #flexslider .text {
+  text-shadow: 0 0 10px black;
+}
+#page-content #flexslider ul li .gradient.dark {
+  background-color: transparent;
+}
+*/
