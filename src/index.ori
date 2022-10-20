@@ -1,15 +1,6 @@
 ---
 title: Trek Demo
 areaIsHome: true
-
-# Read all the trek files from the descriptions folder.
-#
-# Convert them to graphs using meta(), which will have the effect of defining a
-# `parent` property for them. This in turn ensures that the resulting graph is
-# part of the scope chain, so that values in the data can be referenced below
-# in template expressions.
-#
-trekData = map(descriptions, meta):
 ---
 {{#page.ori}}
 <!--  Slider  -->
@@ -163,7 +154,7 @@ trekData = map(descriptions, meta):
       </div>
       <div class="col-md-12 padding-leftright-null">
         <section class="showcase-carousel text">
-          {{#map trekData}}
+          {{#map @input}}
           <!--  Single Trip  -->
           <div class="item">
             <div class="showcase-trek">

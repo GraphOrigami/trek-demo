@@ -1,3 +1,6 @@
+# Treat the markdown files from the descriptions folder as data for the index.
+trekData = map(descriptions, graph):
+index.html = index.ori(trekData):
+
 html = map(descriptions, mdHtml, '.md', '.html'):
 treks = map(html, trek.ori):
-index.html = index.ori():
