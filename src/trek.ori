@@ -2,24 +2,24 @@
 title = name:
 areaIsTreks: true
 ---
-{{#page.ori}}
+{{ page.ori(`
 <!--  Slider  -->
 <div id="flexslider" class="fullpage-wrap small">
   <ul class="slides">
-    <li style="background-image: url({{image}})">
+    <li style="background-image: url({{ image }})">
       <div class="container text text-center">
         <h1 class="white margin-bottom-small">
-          {{name}}
+          {{ name }}
         </h1>
         <p class="heading white">
-          {{subhead}}
+          {{ subhead }}
         </p>
       </div>
       <div class="gradient dark"></div>
     </li>
     <ol class="breadcrumb">
       <li><a href="../#">Home</a></li>
-      <li class="active">{{name}}</li>
+      <li class="active">{{ name }}</li>
     </ol>
   </ul>
 </div>
@@ -36,14 +36,14 @@ areaIsTreks: true
           class="text padding-lg-bottom-null"
         >
           <h2 class="margin-bottom-null title line left">
-            {{category}}
+            {{ category }}
           </h2>
           <p class="heading left grey margin-bottom-null">
-            {{destination}}
+            {{ destination }}
           </p>
           <div class="padding-onlytop-md">
             <p>
-              {{introduction}}
+              {{ introduction }}
             </p>
           </div>
         </div>
@@ -65,10 +65,10 @@ areaIsTreks: true
           >
             <!-- Hiker -->
             <div class="hiker">
-              <img src="{{avatar}}" alt="" />
+              <img src="{{ avatar }}" alt="" />
               <h3 class="">Mountain Guide</h3>
-              <span class="meta grey">Name: {{guide}}</span>
-              <span class="meta grey">Nation: {{country}}</span>
+              <span class="meta grey">Name: {{ guide }}</span>
+              <span class="meta grey">Nation: {{ country }}</span>
               <ul class="social">
                 <li>
                   <a href="/"><i class="icon ion-social-twitter"></i></a>
@@ -111,14 +111,14 @@ areaIsTreks: true
               class="pd-icon-money service big margin-bottom-null white"
             ></i>
             <em class="color">Price</em>
-            <h3 class="white">{{price}}</h3>
+            <h3 class="white">{{ price }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
               class="pd-icon-hour service big margin-bottom-null white"
             ></i>
             <em class="color">Date</em>
-            <h3 class="white">{{date}}</h3>
+            <h3 class="white">{{ date }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
@@ -131,21 +131,21 @@ areaIsTreks: true
               "
             ></i>
             <em class="color">Difficulty</em>
-            <h3 class="white">{{difficulty}}</h3>
+            <h3 class="white">{{ difficulty }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
               class="pd-icon-male service big margin-bottom-null white"
             ></i>
             <em class="color">Max Group Size</em>
-            <h3 class="white">{{groupSize}}</h3>
+            <h3 class="white">{{ groupSize }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
               class="pd-icon-watch service big margin-bottom-null white"
             ></i>
             <em class="color">Days</em>
-            <h3 class="white">{{days}}</h3>
+            <h3 class="white">{{ days }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
@@ -158,7 +158,7 @@ areaIsTreks: true
               "
             ></i>
             <em class="color">Distance</em>
-            <h3 class="white">{{distance}}</h3>
+            <h3 class="white">{{ distance }}</h3>
           </div>
         </div>
         <!-- END Trek data -->
@@ -176,7 +176,7 @@ areaIsTreks: true
         -->
       </div>
       <div class="col-md-12 text">
-{{@text}}
+{{ @text }}
       </div>
     </div>
   </div>
@@ -311,4 +311,4 @@ areaIsTreks: true
   </div>
   <!-- END Call to Action -->
 </div>
-{{/page.ori}}
+`) }}
