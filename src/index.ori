@@ -2,7 +2,7 @@
 title: Trek Demo
 areaIsHome: true
 ---
-{{#page.ori}}
+{{ page.ori`
 <!--  Slider  -->
 <div id="flexslider-nav" class="fullpage-wrap small">
   <ul class="slides">
@@ -417,4 +417,4 @@ areaIsHome: true
   </div>
   <!-- END Section News -->
 </div>
-{{/page.ori}}
+`) }}
