@@ -1,5 +1,7 @@
 This Graph Origami demo is a rough sketch of a site for an adventure trekking company.
 
+[View demo](https://origami-trek-demo.netlify.app/)
+
 The [site.graph](src/site.graph) file orchestrates the transformations to produce the site:
 
 - Trek descriptions in the `src/descriptions` folder include markdown with YAML front matter. These are converted to HTML, then have a page template applied.
