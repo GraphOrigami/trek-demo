@@ -1,0 +1,8 @@
+html = @map/values(descriptions, =@mdHtml(@value), { extension: 'md→html' })
+treks = @map/values(html, trek.ori)
+
+public = {
+  assets
+  index.html = index.ori(descriptions)
+  treks
+}

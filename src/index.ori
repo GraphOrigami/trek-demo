@@ -2,7 +2,7 @@
 title: Trek Demo
 areaIsHome: true
 ---
-{{ page.ori`
+{{ page.ori `
 <!--  Slider  -->
 <div id="flexslider-nav" class="fullpage-wrap small">
   <ul class="slides">
@@ -154,44 +154,44 @@ areaIsHome: true
       </div>
       <div class="col-md-12 padding-leftright-null">
         <section class="showcase-carousel text">
-          {{#map @input}}
+          {{ @map/values @input, =`
           <!--  Single Trip  -->
           <div class="item">
             <div class="showcase-trek">
-              <span class="read">from {{price}}</span>
-              <img src="{{image}}" alt="" />
+              <span class="read">from {{ price }}</span>
+              <img src="{{ image }}" alt="" />
               <div class="content text-center">
                 <div class="row margin-leftright-null">
                   <div class="meta">
                     <div class="col-md-4 padding-leftright-null">
-                      <h3>{{days}}</h3>
+                      <h3>{{ days }}</h3>
                       <h4>Days</h4>
                     </div>
                     <div class="col-md-4 padding-leftright-null">
-                      <h3>{{groupSize}}</h3>
+                      <h3>{{ groupSize }}</h3>
                       <h4>Max Group Size</h4>
                     </div>
                     <div class="col-md-4 padding-leftright-null">
-                      <h3>{{difficulty}}</h3>
+                      <h3>{{ difficulty }}</h3>
                       <h4>Difficulty</h4>
                     </div>
                   </div>
                   <div class="category">
-                    <h3>{{category}}</h3>
+                    <h3>{{ category }}</h3>
                   </div>
                   <div class="info">
                     <div class="col-md-12 padding-leftright-null">
-                      <h6 class="heading">{{name}}</h6>
-                      <p class="margin-null">{{destination}}</p>
+                      <h6 class="heading">{{ name }}</h6>
+                      <p class="margin-null">{{ destination }}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <a href="treks/{{trekId}}.html" class="link"></a>
+              <a href="treks/{{ trekId }}.html" class="link"></a>
             </div>
           </div>
           <!--  END Single Trip  -->
-          {{/map}}
+          ` }}
         </section>
       </div>
     </div>
@@ -417,4 +417,4 @@ areaIsHome: true
   </div>
   <!-- END Section News -->
 </div>
-`) }}
+` }}

@@ -2,7 +2,7 @@
 title = name:
 areaIsTreks: true
 ---
-{{ page.ori(`
+{{ page.ori `
 <!--  Slider  -->
 <div id="flexslider" class="fullpage-wrap small">
   <ul class="slides">
@@ -311,4 +311,4 @@ areaIsTreks: true
   </div>
   <!-- END Call to Action -->
 </div>
-`) }}
+` }}

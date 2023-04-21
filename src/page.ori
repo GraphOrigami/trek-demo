@@ -58,10 +58,10 @@
             <div class="menu-holder">
               <ul>
                 <li class="submenu">
-                  <a href="/"{{ if areaIsHome, =`class="active-item"` }}>Home</a>
+                  <a href="/"{{ @if areaIsHome, =`class="active-item"` }}>Home</a>
                 </li>
                 <li>
-                  <a href="/treks/"{{ if areaIsTreks, =`class="active-item"` }}>Treks</a>
+                  <a href="/treks/"{{ @if areaIsTreks, =`class="active-item"` }}>Treks</a>
                 </li>
                 <li class="submenu">
                   <a href="/gallery/">Gallery</a>
@@ -120,7 +120,7 @@
 
       <!--  Page Content, class footer-fixed if footer is fixed  -->
       <div id="page-content" class="header-static footer-fixed">
-{{ @text }}
+{{ @input }}
       </div>
       
       <!--  Footer. Class fixed for fixed footer  -->
