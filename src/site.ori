@@ -1,0 +1,15 @@
+{
+  # Convert the markdown files in the "descriptions" folder to HTML bodies.
+  html = @map(descriptions, { extensions: 'md→html', valueMap: @mdHtml })
+
+  # Apply the trek.ori template to the HTML bodies.
+  treks = @map(html, trek.orit)
+
+  # Root of public site
+  public = {
+    assets
+    # The index page takes the trek descriptions as input so it can render tiles.
+    index.html = index.orit(descriptions)
+    treks
+  }
+}

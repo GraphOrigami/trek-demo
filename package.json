@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "0.0.25",
+    "@weborigami/origami": "0.0.38",
     "sharp": "0.32.0"
   },
   "scripts": {
-    "build": "ori @copy src/site.graph/public, @files/dist",
-    "start": "ori @serve src/site.graph/public"
+    "build": "ori @copy src/site.ori/public, @files/build",
+    "start": "ori @serve src/site.ori/public"
   }
 }
