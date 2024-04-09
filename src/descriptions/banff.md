@@ -4,7 +4,7 @@ name: Banff
 subhead: Rugged alpine landscapes and crystal lakes in Banff National Park
 destination: Alberta, Canada
 category: Trekking Expedition
-image: /assets/img/banff.jpg
+image: /assets/img/trips/banff.jpg
 days: 8
 groupSize: 5
 difficulty: Easy

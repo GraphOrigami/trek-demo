@@ -4,7 +4,7 @@ name: Torres del Paine
 subhead: Glaciers and towering granite horns
 destination: Coquimbo, Chile
 category: Trekking Expedition
-image: /assets/img/torres.jpg
+image: /assets/img/trips/torres.jpg
 days: 7
 groupSize: 10
 difficulty: High

@@ -4,7 +4,7 @@ name: The Patagonia Coast
 subhead: Striking coastal mountains and vibrant sea life
 destination: Patagnoia, Chile
 category: Kayaking Expedition
-image: /assets/img/patagonia.jpg
+image: /assets/img/trips/patagonia.jpg
 days: 1
 groupSize: 20
 difficulty: Medium

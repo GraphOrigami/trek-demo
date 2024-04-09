@@ -4,7 +4,7 @@ name: Hang Én (Swallow Cave)
 subhead: Go deep — in one of the largest caves on Earth
 destination: Quảng Bình Province, Vietnam
 category: Caving Expedition
-image: /assets/img/hangen.jpg
+image: /assets/img/trips/hangen.jpg
 days: 12
 groupSize: 10
 difficulty: High
