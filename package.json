@@ -8,6 +8,6 @@
   },
   "scripts": {
     "build": "ori @copy src/site.ori/public, @mkdir/build",
-    "start": "ori @serve src/site.ori/public"
+    "start": "ori @serve @watch src, =@debug site.ori/public"
   }
 }

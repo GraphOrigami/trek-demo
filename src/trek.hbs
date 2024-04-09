@@ -1,0 +1,310 @@
+{{#> page title=name areaIsTreks=true}}
+  <!--  Slider  -->
+  <div id="flexslider" class="fullpage-wrap small">
+    <ul class="slides">
+      <li style="background-image: url({{ image }})">
+        <div class="container text text-center">
+          <h1 class="white margin-bottom-small">
+            {{ name }}
+          </h1>
+          <p class="heading white">
+            {{ subhead }}
+          </p>
+        </div>
+        <div class="gradient dark"></div>
+      </li>
+      <ol class="breadcrumb">
+        <li><a href="../#">Home</a></li>
+        <li class="active">{{ name }}</li>
+      </ol>
+    </ul>
+  </div>
+  <!--  END Slider  -->
+  <div id="post-wrap" class="content-section fullpage-wrap">
+    <!-- Section same Height. Child get the parent Height. Set the same id -->
+    <div class="row margin-leftright-null">
+      <div class="container">
+        <!-- About -->
+        <div class="col-lg-6 padding-leftright-null">
+          <div
+            data-responsive="parent-height"
+            data-responsive-id="adv"
+            class="text padding-lg-bottom-null"
+          >
+            <h2 class="margin-bottom-null title line left">
+              {{ category }}
+            </h2>
+            <p class="heading left grey margin-bottom-null">
+              {{ destination }}
+            </p>
+            <div class="padding-onlytop-md">
+              <p>
+                {{ introduction }}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- END About -->
+        <div class="col-lg-6 padding-leftright-null">
+          <div
+            data-responsive="child-height"
+            data-responsive-id="adv"
+            class="text padding-md-top-null height-auto-lg"
+          >
+            <div
+              class="
+                grey-background
+                box-shadow
+                text
+                responsive-padding-sm
+              "
+            >
+              <!-- Hiker -->
+              <div class="hiker">
+                <img src="{{ avatar }}" alt="" />
+                <h3 class="">Mountain Guide</h3>
+                <span class="meta grey">Name: {{ guide }}</span>
+                <span class="meta grey">Nation: {{ country }}</span>
+                <ul class="social">
+                  <li>
+                    <a href="/"><i class="icon ion-social-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="/"
+                      ><i class="icon ion-social-dribbble"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="/"
+                      ><i class="icon ion-social-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="/"
+                      ><i class="icon ion-social-snapchat"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- END Hiker -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Section same Height. Child get the parent Height. Set the same id -->
+    <!--  Section Image Background with overlay  -->
+    <div class="row margin-leftright-null grey-background">
+      <div
+        class="bg-img overlay simple-parallax responsive"
+        style="background-image: url(../assets/img/testimonials.jpg)"
+      >
+        <div class="container">
+          <!-- Trek data -->
+          <div class="text trek-data text-center">
+            <div class="col-sm-4 col-md-2">
+              <i
+                class="pd-icon-money service big margin-bottom-null white"
+              ></i>
+              <em class="color">Price</em>
+              <h3 class="white">{{ price }}</h3>
+            </div>
+            <div class="col-sm-4 col-md-2">
+              <i
+                class="pd-icon-hour service big margin-bottom-null white"
+              ></i>
+              <em class="color">Date</em>
+              <h3 class="white">{{ date }}</h3>
+            </div>
+            <div class="col-sm-4 col-md-2">
+              <i
+                class="
+                  pd-icon-camp-bag
+                  service
+                  big
+                  margin-bottom-null
+                  white
+                "
+              ></i>
+              <em class="color">Difficulty</em>
+              <h3 class="white">{{ difficulty }}</h3>
+            </div>
+            <div class="col-sm-4 col-md-2">
+              <i
+                class="pd-icon-male service big margin-bottom-null white"
+              ></i>
+              <em class="color">Max Group Size</em>
+              <h3 class="white">{{ groupSize }}</h3>
+            </div>
+            <div class="col-sm-4 col-md-2">
+              <i
+                class="pd-icon-watch service big margin-bottom-null white"
+              ></i>
+              <em class="color">Days</em>
+              <h3 class="white">{{ days }}</h3>
+            </div>
+            <div class="col-sm-4 col-md-2">
+              <i
+                class="
+                  pd-icon-distance
+                  service
+                  big
+                  margin-bottom-null
+                  white
+                "
+              ></i>
+              <em class="color">Distance</em>
+              <h3 class="white">{{ distance }}</h3>
+            </div>
+          </div>
+          <!-- END Trek data -->
+        </div>
+      </div>
+    </div>
+    <!--  END Section Image Background with overlay  -->
+    <!-- Description Trek -->
+    <div class="row margin-leftright-null">
+      <div class="container">
+        <div class="col-md-12 text padding-bottom-null text-center">
+          <h2 class="margin-bottom-null title line center">More info</h2>
+          <!--
+          <p class="heading center grey margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+          -->
+        </div>
+        <div class="col-md-12 text">
+  {{ @text }}
+        </div>
+      </div>
+    </div>
+    <!-- END Description Trek -->
+    <!--  Share Btn  -->
+    <div id="share">
+      <a class="share-btn">
+        <i class="icon ion-android-share-alt"></i>
+      </a>
+      <div class="share-icons" style="display: none">
+        <a href="/" class="share-google">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a>
+        <a href="/" class="share-twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="/" class="share-linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="/" class="share-mail">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!--  END Share Btn  -->
+    <!-- Similar Trips -->
+    <div
+      id="showcase-treks"
+      class="row margin-leftright-null grey-background"
+    >
+      <div class="container">
+        <div class="col-md-12 text padding-bottom-null text-center">
+          <h2 class="margin-bottom-null title line center">
+            Similar Trips
+          </h2>
+          <p class="heading center grey margin-bottom-null">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit
+          </p>
+        </div>
+        <div class="col-md-12 text" id="treks">
+          <!-- Single Trip -->
+          <div class="item col-md-6">
+            <div class="showcase-trek">
+              <span class="read"> from 820$ </span>
+              <img src="../assets/img/trip5.jpg" alt="" />
+              <div class="content text-center">
+                <div class="row margin-leftright-null">
+                  <div class="meta">
+                    <div class="col-md-4 padding-leftright-null">
+                      <h3>12</h3>
+                      <h4>Days</h4>
+                    </div>
+                    <div class="col-md-4 padding-leftright-null">
+                      <h3>10</h3>
+                      <h4>Max Group Size</h4>
+                    </div>
+                    <div class="col-md-4 padding-leftright-null">
+                      <h3>Hight</h3>
+                      <h4>Difficulty</h4>
+                    </div>
+                  </div>
+                  <div class="category">
+                    <h3>Hiking Expedition</h3>
+                  </div>
+                  <div class="info">
+                    <div class="col-md-12 padding-leftright-null">
+                      <h6 class="heading">Everest Base Camp</h6>
+                      <p class="margin-null">Ama Dablam, Nepal</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="../single-trek-2.html" class="link"></a>
+            </div>
+          </div>
+          <!-- END Single Trip -->
+          <div class="item col-md-6">
+            <div class="showcase-trek">
+              <span class="read"> from 320$ </span>
+              <img src="../assets/img/trip6.jpg" alt="" />
+              <div class="content text-center">
+                <div class="row margin-leftright-null">
+                  <div class="meta">
+                    <div class="col-md-4 padding-leftright-null">
+                      <h3>3</h3>
+                      <h4>Days</h4>
+                    </div>
+                    <div class="col-md-4 padding-leftright-null">
+                      <h3>5</h3>
+                      <h4>Max Group Size</h4>
+                    </div>
+                    <div class="col-md-4 padding-leftright-null">
+                      <h3>Easy</h3>
+                      <h4>Difficulty</h4>
+                    </div>
+                  </div>
+                  <div class="category">
+                    <h3>Trekking Expedition</h3>
+                  </div>
+                  <div class="info">
+                    <div class="col-md-12 padding-leftright-null">
+                      <h6 class="heading">Monte Bianco</h6>
+                      <p class="margin-null">Courmayeur, France</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="../standard-project.html" class="link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Similar Trips -->
+    <!-- Call to Action -->
+    <div class="row text margin-leftright-null color-background">
+      <div class="col-md-12 text-center">
+        <h4 class="big white">
+          Would you like more info about this trip?
+        </h4>
+        <h4 class="big margin-bottom-small white">
+          Call us at
+          <a href="/" class="btn-pro simple white">+40 45615654</a> or
+        </h4>
+        <a
+          href="../#"
+          target="_blank"
+          class="btn-alt small white margin-null active shadow"
+          >Contact us</a
+        >
+      </div>
+    </div>
+    <!-- END Call to Action -->
+  </div>
+{{/page}}

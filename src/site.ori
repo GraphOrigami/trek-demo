@@ -8,9 +8,11 @@
     assets
 
     // The index page takes the trek descriptions as input so it can render tiles.
-    index.html = index.ori(descriptions)
+    index.html = index.hbs(descriptions)
 
     // Apply the trek.ori template to the HTML bodies.
-    treks = @map(html, trek.ori)
+    treks = @map(html, trek.hbs)
+
+    banff.html = trek.hbs(html/banff.html)
   }
 }
