@@ -9,7 +9,7 @@
 
     contact.html = contact.hbs()
 
-    // The index page takes the trek descriptions as input so it can render tiles.
+    // The index page takes the trek descriptions as input so it can render cards.
     index.html = index.hbs(descriptions)
 
     // Gallery page gets a list of all the big images.
@@ -21,7 +21,7 @@
       {
         index.html = treks.hbs(descriptions)
       }
-      // Create pages for each individual trek
+      // Create a page for each trek.
       @map(html, trek.hbs)
     )
   }

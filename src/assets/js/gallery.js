@@ -1,12 +1,7 @@
 function showImageDialog(img) {
   const dialog = document.createElement("dialog");
-  dialog.innerHTML = `
-    <img src="${img.src}" alt="${img.alt}" />
-    <!-- <button>Close</button> -->
-  `;
-  // dialog.querySelector("button").addEventListener("click", () => {
-  //   dialog.close();
-  // });
+  dialog.appendChild(img.cloneNode());
+
   const close = () => {
     dialog.close();
     dialog.remove();
@@ -14,6 +9,8 @@ function showImageDialog(img) {
   dialog.addEventListener("cancel", close);
   dialog.addEventListener("click", close);
   dialog.addEventListener("close", close);
+  dialog.addEventListener("keydown", close);
+
   document.body.appendChild(dialog);
   dialog.showModal();
 }
