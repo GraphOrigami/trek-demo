@@ -1,0 +1,29 @@
+<!-- Handlebars template for the complete Treks index -->
+{{#> page title="Treks" areaIsTreks=true}}
+  <div id="flexslider" class="fullpage-wrap small">
+      <ul class="slides">
+          <li style="background-image:url(/assets/img/trip8.jpg)">
+              <div class="container text text-center">
+                  <h1 class="white margin-bottom-small">All Treks</h1>
+                  <p class="heading white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam aperiam rerum quis atque, illum.</p>
+              </div>
+              <div class="gradient dark"></div>
+          </li>
+      </ul>
+  </div>
+  <!-- Trip Showcase  -->
+  <div
+    id="showcase-treks"
+    class="text padding-bottom-null grey-background center"
+  >
+    <div class="container">
+      <div class="col-md-12 padding-leftright-null">
+        <section class="showcase-carousel text">
+          {{#each @root}}
+            {{> card this }}
+          {{/each}}
+        </section>
+      </div>
+    </div>
+  </div>
+{{/page}}
