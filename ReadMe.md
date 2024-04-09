@@ -8,3 +8,5 @@ The [site.graph](src/site.graph) file orchestrates the transformations to produc
 - The same trek descriptions are fed to the index.html template so that the home page can include tiles for each trek.
 
 **This is a work in progress.** The only links in the site that work are from the home page to the treks and vice versa. _Most of the other navigation links don't work._
+
+The visual style of the site is based on the [Dolomia WordPress Theme](https://themeforest.net/item/dolomia-hiking-outdoor-mountain-guide-wordpress-theme/20086652).

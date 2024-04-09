@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+(page) => `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ _/title }}</title>
+    <title>{{ page/title }}</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
@@ -58,10 +58,10 @@
             <div class="menu-holder">
               <ul>
                 <li class="submenu">
-                  <a href="/"{{ @if areaIsHome, =`class="active-item"` }}>Home</a>
+                  <a href="/"{{ @if page/areaIsHome, =`class="active-item"` }}>Home</a>
                 </li>
                 <li>
-                  <a href="/treks/"{{ @if areaIsTreks, =`class="active-item"` }}>Treks</a>
+                  <a href="/treks/"{{ @if page/areaIsTreks, =`class="active-item"` }}>Treks</a>
                 </li>
                 <li class="submenu">
                   <a href="/gallery/">Gallery</a>
@@ -120,7 +120,7 @@
 
       <!--  Page Content, class footer-fixed if footer is fixed  -->
       <div id="page-content" class="header-static footer-fixed">
-{{ _/@text }}
+{{ page/@text }}
       </div>
       
       <!--  Footer. Class fixed for fixed footer  -->
@@ -218,3 +218,4 @@
     <!--  Main Wrap  -->
   </body>
 </html>
+`

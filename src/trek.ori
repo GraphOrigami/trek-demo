@@ -1,24 +1,24 @@
-{{ page.orit({
-  title: _/name
+(trek) => page.ori({
+  title: trek/name
   areaIsTreks: @true
   @text: `
 <!--  Slider  -->
 <div id="flexslider" class="fullpage-wrap small">
   <ul class="slides">
-    <li style="background-image: url({{ _/image }})">
+    <li style="background-image: url({{ trek/image }})">
       <div class="container text text-center">
         <h1 class="white margin-bottom-small">
-          {{ _/name }}
+          {{ trek/name }}
         </h1>
         <p class="heading white">
-          {{ _/subhead }}
+          {{ trek/subhead }}
         </p>
       </div>
       <div class="gradient dark"></div>
     </li>
     <ol class="breadcrumb">
       <li><a href="../#">Home</a></li>
-      <li class="active">{{ _/name }}</li>
+      <li class="active">{{ trek/name }}</li>
     </ol>
   </ul>
 </div>
@@ -35,14 +35,14 @@
           class="text padding-lg-bottom-null"
         >
           <h2 class="margin-bottom-null title line left">
-            {{ _/category }}
+            {{ trek/category }}
           </h2>
           <p class="heading left grey margin-bottom-null">
-            {{ _/destination }}
+            {{ trek/destination }}
           </p>
           <div class="padding-onlytop-md">
             <p>
-              {{ _/introduction }}
+              {{ trek/introduction }}
             </p>
           </div>
         </div>
@@ -64,10 +64,10 @@
           >
             <!-- Hiker -->
             <div class="hiker">
-              <img src="{{ _/avatar }}" alt="" />
+              <img src="{{ trek/avatar }}" alt="" />
               <h3 class="">Mountain Guide</h3>
-              <span class="meta grey">Name: {{ _/guide }}</span>
-              <span class="meta grey">Nation: {{ _/country }}</span>
+              <span class="meta grey">Name: {{ trek/guide }}</span>
+              <span class="meta grey">Nation: {{ trek/country }}</span>
               <ul class="social">
                 <li>
                   <a href="/"><i class="icon ion-social-twitter"></i></a>
@@ -110,14 +110,14 @@
               class="pd-icon-money service big margin-bottom-null white"
             ></i>
             <em class="color">Price</em>
-            <h3 class="white">{{ _/price }}</h3>
+            <h3 class="white">{{ trek/price }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
               class="pd-icon-hour service big margin-bottom-null white"
             ></i>
             <em class="color">Date</em>
-            <h3 class="white">{{ _/date }}</h3>
+            <h3 class="white">{{ trek/date }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
@@ -130,21 +130,21 @@
               "
             ></i>
             <em class="color">Difficulty</em>
-            <h3 class="white">{{ _/difficulty }}</h3>
+            <h3 class="white">{{ trek/difficulty }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
               class="pd-icon-male service big margin-bottom-null white"
             ></i>
             <em class="color">Max Group Size</em>
-            <h3 class="white">{{ _/groupSize }}</h3>
+            <h3 class="white">{{ trek/groupSize }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
               class="pd-icon-watch service big margin-bottom-null white"
             ></i>
             <em class="color">Days</em>
-            <h3 class="white">{{ _/days }}</h3>
+            <h3 class="white">{{ trek/days }}</h3>
           </div>
           <div class="col-sm-4 col-md-2">
             <i
@@ -157,7 +157,7 @@
               "
             ></i>
             <em class="color">Distance</em>
-            <h3 class="white">{{ _/distance }}</h3>
+            <h3 class="white">{{ trek/distance }}</h3>
           </div>
         </div>
         <!-- END Trek data -->
@@ -175,7 +175,7 @@
         -->
       </div>
       <div class="col-md-12 text">
-{{ _/@text }}
+{{ trek/@text }}
       </div>
     </div>
   </div>
@@ -310,4 +310,4 @@
   </div>
   <!-- END Call to Action -->
 </div>
-`}) }}
+`})
