@@ -15,34 +15,53 @@
    >
 
     <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- <link rel="stylesheet" href="/assets/css/new.css"> -->
     <link rel="stylesheet" href="/assets/css/modifications.css">
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/ionicons.min.css">
     <link rel="stylesheet" href="/assets/css/puredesign.css">
-    <link rel="stylesheet" href="/assets/css/demo.css">
   </head>
 
-  <body class="pace-done">
+  <body>
 
     <!--  Header & Menu  -->
     <header id="header" class="fixed-top full-width transparent">
+      <!--
+      <nav class="newNav">
+        <a href="/">
+          <img
+            src="/assets/img/logo.png" 
+            srcset="/assets/img/logo.png 1x, /assets/img/logo@2x.png 2x" 
+            alt="logo"
+          >
+          <img
+            class="white-logo"
+            src="/assets/img/logo_white.png" 
+            srcset="/assets/img/logo_white.png 1x, /assets/img/logo_white@2x.png 2x" 
+            alt="logo"
+          >
+        </a>
+        <div>
+          Buttons go here
+        </div>
+      </nav>
+      -->
       <div class="container">
         <nav class="navbar navbar-default white">
           <!--  Header Logo  -->
           <div id="logo">
             <a class="navbar-brand" href="/">
-              <img src="/assets/img/logo.png" class="normal" alt="logo">
-              <img src="/assets/img/logo@2x.png" class="retina" alt="logo">
               <img
-                src="/assets/img/logo_white.png"
-                class="normal white-logo"
+                src="/assets/img/logo.png" 
+                srcset="/assets/img/logo.png 1x, /assets/img/logo@2x.png 2x" 
                 alt="logo"
-             >
+              >
               <img
-                src="/assets/img/logo_white@2x.png"
-                class="retina white-logo"
+                class="white-logo"
+                src="/assets/img/logo_white.png" 
+                srcset="/assets/img/logo_white.png 1x, /assets/img/logo_white@2x.png 2x" 
                 alt="logo"
-             >
+              >
             </a>
           </div>
           <!--  END Header Logo  -->
@@ -62,10 +81,6 @@
                 <li>
                   <a href="/contact.html"{{#if areaIsContact}} class="active-item"{{/if}}>Contact</a>
                 </li>
-                <!-- Search Icon -->
-                <li class="search">
-                  <i class="icon ion-ios-search"></i>
-                </li>
               </ul>
             </div>
           </div>
@@ -79,27 +94,6 @@
             </div>
           </div>
           <!--  END Button for Responsive Menu Classic  -->
-          <!--  Search Box  -->
-          <div id="search-box" class="full-width">
-            <form role="search" id="search-form" class="black big">
-              <div class="form-input">
-                <input
-                  class="form-field black big"
-                  type="search"
-                  placeholder="Search..."
-               >
-                <span class="form-button big">
-                  <button type="button">
-                    <i class="icon ion-ios-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-            <button class="close-search-box">
-              <i class="icon ion-ios-close-empty"></i>
-            </button>
-          </div>
-          <!--  END Search Box  -->
         </nav>
       </div>
     </header>

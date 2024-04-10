@@ -5,14 +5,14 @@ subhead: Go deep — in one of the largest caves on Earth
 destination: Quảng Bình Province, Vietnam
 category: Caving Expedition
 image: /assets/img/trips/hangen.jpg
-days: 12
+days: 6
 groupSize: 10
 difficulty: High
-price: $1820
-date: 2022-06-03
-distance: 45 km
-guide: Nadean Metcalfe
-avatar: /assets/img/hiker4.jpg
+price: $1839
+date: September 9
+distance: 20 km
+guide: Gilbert Patrick
+avatar: /assets/img/hiker3.jpg
 country: Vietnam
 introduction: Hang Én is the third largest cave in the world, after Hang Sơn Đoòng in the same national park, and Deer Cave in Malaysia. The cave has its own jungle, waters, beach, and climate. There are three known entrances to Hang Én.
 ---
