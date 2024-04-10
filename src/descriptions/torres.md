@@ -14,6 +14,11 @@ distance: 108 km
 guide: Berkely Keary
 avatar: /assets/img/hiker1.jpg
 country: Australia
+related:
+  - wadirum
+  - hangen
+  - mathikettan
+  - nunavut
 introduction: Torres del Paine National Park is part of the Sistema Nacional de Áreas Silvestres Protegidas del Estado de Chile (National System of Protected Forested Areas of Chile). In 2013, it measured approximately 181,414 hectares. It is one of the largest and most visited parks in Chile. The park averages around 252,000 visitors a year, of which 54% are foreign tourists, who come from many countries all over the world. It is also part of the End of the World Route, a tourist scenic route.
 ---
 

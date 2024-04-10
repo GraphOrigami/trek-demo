@@ -13,7 +13,12 @@ date: December 7
 distance: 90 km
 guide: Gilbert Patrick
 avatar: /assets/img/hiker3.jpg
-country: Italy
+country: Austria
+related:
+  - wadirum
+  - hangen
+  - mathikettan
+  - nunavut
 introduction: The Patagonia region encompasses the southern end of South America, governed by Argentina and Chile. The region comprises the southern section of the Andes Mountains, lakes, fjords, and glaciers in the west and deserts, tablelands and steppes to the east. Patagonia is bounded by the Pacific Ocean on the west, the Atlantic Ocean to the east, and many bodies of water that connect them, such as the Strait of Magellan, the Beagle Channel, and the Drake Passage to the south.
 ---
 

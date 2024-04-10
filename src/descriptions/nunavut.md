@@ -13,7 +13,12 @@ date: July 20
 distance: 78 km
 guide: Jessica Simpson
 avatar: /assets/img/hiker2.jpg
-country: England
+country: France
+related:
+  - patagonia
+  - torres
+  - banff
+  - mustang
 introduction: Venture into the heart of the Canadian Arctic with our unparalleled climbing expedition in Auyuittuq National Park, Nunavut. This remote, rugged landscape of sharp peaks, expansive glaciers, and icy fjords offers an adventure that is as challenging as it is breathtaking. Auyuittuq, meaning 'the land that never melts,' is a testament to the raw, untamed beauty of the Arctic wilderness.
 ---
 

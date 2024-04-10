@@ -13,7 +13,12 @@ date: August 5
 distance: 205 km
 guide: Berkely Keary
 avatar: /assets/img/hiker1.jpg
-country: England
+country: Australia
+related:
+  - hangen
+  - mathikettan
+  - nunavut
+  - wadirum
 introduction: Banff National Park is Canada's oldest national park, established in 1885. Located in Alberta's Rocky Mountains, 110–180 kilometres (68–112 mi) west of Calgary, Banff encompasses 6,641 square kilometres (2,564 sq mi) of mountainous terrain, with many glaciers and ice fields, dense coniferous forest, and alpine landscapes.
 ---
 

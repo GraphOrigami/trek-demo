@@ -11,18 +11,14 @@
           </li>
       </ul>
   </div>
-  <!-- Trip Showcase  -->
-  <div
-    id="showcase-treks"
-    class="text padding-bottom-null grey-background center"
- >
-    <div class="container">
-      <div class="col-md-12 padding-leftright-null">
-        <section class="showcase-carousel text">
-          {{#each @root}}
-            {{> card this }}
-          {{/each}}
-        </section>
+  <div id="home-wrap" class="content-section fullpage-wrap">
+    <!-- Trip Showcase  -->
+    <div
+      id="showcase-treks"
+      class="text padding-bottom-null grey-background center"
+    >
+      <div class="container">
+        {{> cards @root }}
       </div>
     </div>
   </div>

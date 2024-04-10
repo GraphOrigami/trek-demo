@@ -13,7 +13,12 @@ date: August 19
 distance: 112 km
 guide: Berkely Keary
 avatar: /assets/img/hiker1.jpg
-country: England
+country: Australia
+related:
+  - nunavut
+  - wadirum
+  - hangen
+  - mathikettan
 introduction: Are you ready to transcend the ordinary and venture into the heart of one of the world's most secluded and untouched regions? Mustang, located in the northern part of Nepal, offers an unparalleled adventure for those who dare to explore its hidden treasures.
 ---
 

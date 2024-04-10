@@ -13,7 +13,12 @@ date: July 9
 distance: 52 km
 guide: Jessica Simpson
 avatar: /assets/img/hiker2.jpg
-country: England
+country: France
+related:
+  - banff
+  - mustang
+  - patagonia
+  - torres
 introduction: Step into the legendary landscapes of Wadi Rum, also known as the Valley of the Moon, where monumental rock formations rise from the desert floor to touch the azure skies. This vast, echoing wilderness in Jordan is not just a destination; it's a journey back in time, through the ages of the earth and human history. For climbers, Wadi Rum offers an unparalleled adventure that challenges the body and elevates the spirit.
 ---
 

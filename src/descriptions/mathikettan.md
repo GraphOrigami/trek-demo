@@ -13,7 +13,12 @@ date: April 23
 distance: 91 km
 guide: Berkely Keary
 avatar: /assets/img/hiker1.jpg
-country: England
+country: Australia
+related:
+  - mustang
+  - patagonia
+  - torres
+  - banff
 introduction: Nestled in the heart of the Western Ghats, Mathikettan Shola National Park is a hidden gem waiting to be discovered by those who seek the road less traveled. With its name meaning 'mind-confusing forest' in Tamil, this enchanting sanctuary offers a labyrinth of biodiversity and pristine beauty that beckons adventurers, nature lovers, and solitude seekers alike.
 ---
 

@@ -1,6 +1,13 @@
 {
-  // Convert the markdown files in the "descriptions" folder to HTML bodies.
-  html = @map(descriptions, @mdHtml)
+  // Cross-link treks: for each trek document, add a `links` field with the data
+  // for its related treks. This lets an individual trek page show tiles
+  // containing data for related treks.
+  linked = @map(descriptions, (trek) => @merge(trek, {
+    links: @map(trek/related, (relatedId) => descriptions(`${relatedId}.md`))
+  }))
+
+  // Convert the markdown in the descriptions to HTML bodies.
+  html = @map(linked, @mdHtml)
 
   // Root of public site
   public = {
@@ -9,19 +16,19 @@
 
     contact.html = contact.hbs()
 
-    // The index page takes the trek descriptions as input so it can render cards.
-    index.html = index.hbs(descriptions)
+    // The index page shows just a few treks as "featured".
+    index.html = index.hbs(@take(descriptions, 4))
 
     // Gallery page gets a list of all the big images.
     gallery.html = gallery.hbs(@keys(assets/img/trips))
 
     // Treks area
     treks = @merge(
-      // Index page with listing of all treks
+      // Generate area index page listing all treks.
       {
         index.html = treks.hbs(descriptions)
       }
-      // Create a page for each trek.
+      // Generate a page for each trek.
       @map(html, trek.hbs)
     )
   }

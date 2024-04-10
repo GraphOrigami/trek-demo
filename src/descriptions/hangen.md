@@ -13,7 +13,12 @@ date: September 9
 distance: 20 km
 guide: Gilbert Patrick
 avatar: /assets/img/hiker3.jpg
-country: Vietnam
+country: Austria
+related:
+  - mustang
+  - patagonia
+  - torres
+  - banff
 introduction: Hang Én is the third largest cave in the world, after Hang Sơn Đoòng in the same national park, and Deer Cave in Malaysia. The cave has its own jungle, waters, beach, and climate. There are three known entrances to Hang Én.
 ---
 

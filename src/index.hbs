@@ -145,16 +145,10 @@
             Featured trips
           </h2>
           <p class="heading center grey margin-bottom-null">
-            for 2022 and 2023
+            for the upcoming year
           </p>
         </div>
-        <div class="col-md-12 padding-leftright-null">
-          <section class="showcase-carousel text">
-            {{#each @root}}
-              {{> card this }}
-            {{/each}}
-          </section>
-        </div>
+        {{> cards @root }}
       </div>
     </div>
     <!--  END Trip Showcase  -->
@@ -246,7 +240,7 @@
             </div>
             <div class="description text-center">
               <h5>Berkely Keary</h5>
-              <h6>Cortina, Italy</h6>
+              <h6>Queenstown, Australia</h6>
             </div>
           </div>
           <div class="col-md-4 single-person">
