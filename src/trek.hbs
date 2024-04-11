@@ -1,24 +1,13 @@
+<!-- Page for a single trek -->
 {{#> page title=name areaIsTreks=true}}
-  <!--  Slider  -->
-  <div id="flexslider" class="fullpage-wrap small">
-    <ul class="slides">
-      <li style="background-image: url({{ image }})">
-        <div class="container text text-center">
-          <h1 class="white margin-bottom-small">
-            {{ name }}
-          </h1>
-          <p class="heading white">
-            {{ subhead }}
-          </p>
-        </div>
-        <div class="gradient dark"></div>
-      </li>
-      <ol class="breadcrumb">
-        <li><a href="../#">Home</a></li>
-        <li class="active">{{ name }}</li>
-      </ol>
-    </ul>
-  </div>
+  {{#>hero}}
+    <h1>
+      {{ name }}
+    </h1>
+    <p class="tagline">
+      {{ subhead }}
+    </p>
+  {{/hero}}
   <!--  END Slider  -->
   <div id="post-wrap" class="content-section fullpage-wrap">
     <!-- Section same Height. Child get the parent Height. Set the same id -->

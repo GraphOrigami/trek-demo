@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Main page template -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,198 +7,30 @@
     <title>{{title}}</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css"> -->
 
     <!-- Optional theme -->
-    <link
-      rel="stylesheet"
-      href="/assets/css/bootstrap/bootstrap-theme.min.css"
-   >
+    <!-- <link
+        rel="stylesheet"
+        href="/assets/css/bootstrap/bootstrap-theme.min.css"
+    > -->
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- <link rel="stylesheet" href="/assets/css/new.css"> -->
+    <!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+    <link rel="stylesheet" href="/assets/css/new.css">
     <link rel="stylesheet" href="/assets/css/modifications.css">
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/css/ionicons.min.css">
     <link rel="stylesheet" href="/assets/css/puredesign.css">
+    <script type="module">
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        header.classList.toggle("opaque", window.scrollY > 90);
+      });
+    </script>
   </head>
-
   <body>
-
-    <!--  Header & Menu  -->
-    <header id="header" class="fixed-top full-width transparent">
-      <!--
-      <nav class="newNav">
-        <a href="/">
-          <img
-            src="/assets/img/logo.png" 
-            srcset="/assets/img/logo.png 1x, /assets/img/logo@2x.png 2x" 
-            alt="logo"
-          >
-          <img
-            class="white-logo"
-            src="/assets/img/logo_white.png" 
-            srcset="/assets/img/logo_white.png 1x, /assets/img/logo_white@2x.png 2x" 
-            alt="logo"
-          >
-        </a>
-        <div>
-          Buttons go here
-        </div>
-      </nav>
-      -->
-      <div class="container">
-        <nav class="navbar navbar-default white">
-          <!--  Header Logo  -->
-          <div id="logo">
-            <a class="navbar-brand" href="/">
-              <img
-                src="/assets/img/logo.png" 
-                srcset="/assets/img/logo.png 1x, /assets/img/logo@2x.png 2x" 
-                alt="logo"
-              >
-              <img
-                class="white-logo"
-                src="/assets/img/logo_white.png" 
-                srcset="/assets/img/logo_white.png 1x, /assets/img/logo_white@2x.png 2x" 
-                alt="logo"
-              >
-            </a>
-          </div>
-          <!--  END Header Logo  -->
-          <!--  Classic menu, responsive menu classic  -->
-          <div id="menu-classic">
-            <div class="menu-holder">
-              <ul>
-                <li class="submenu">
-                  <a href="/"{{#if areaIsHome}} class="active-item"{{/if}}>Home</a>
-                </li>
-                <li>
-                  <a href="/treks/"{{#if areaIsTreks}} class="active-item"{{/if}}>Treks</a>
-                </li>
-                <li class="submenu">
-                  <a href="/gallery.html"{{#if areaIsGallery}} class="active-item"{{/if}}>Gallery</a>
-                </li>
-                <li>
-                  <a href="/contact.html"{{#if areaIsContact}} class="active-item"{{/if}}>Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!--  END Classic menu, responsive menu classic  -->
-          <!--  Button for Responsive Menu Classic  -->
-          <div id="menu-responsive-classic">
-            <div class="menu-button">
-              <span class="bar bar-1"></span>
-              <span class="bar bar-2"></span>
-              <span class="bar bar-3"></span>
-            </div>
-          </div>
-          <!--  END Button for Responsive Menu Classic  -->
-        </nav>
-      </div>
-    </header>
-    <!--  END Header & Menu  -->
-
-    <!--  Main Wrap  -->
-    <div id="main-wrap" class="full-width">
-
-      <!--  Page Content, class footer-fixed if footer is fixed  -->
-      <div id="page-content" class="header-static footer-fixed">
-        {{> @partial-block }}
-      </div>
-      
-      <!--  Footer. Class fixed for fixed footer  -->
-      <footer class="fixed full-width">
-        <div class="container">
-          <div class="row no-margin">
-            <div class="col-sm-4 col-md-2 padding-leftright-null">
-              <h6 class="heading white margin-bottom-extrasmall">Dolomia</h6>
-              <ul class="sitemap">
-                <li><a href="/">Home</a></li>
-                <li><a href="/treks/">Treks</a></li>
-                <li><a href="/gallery/">Gallery</a></li>
-                <li><a href="/contact-form.html">Contacts</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-4 col-md-2 padding-leftright-null">
-              <h6 class="heading white margin-bottom-extrasmall">
-                Useful Links
-              </h6>
-              <ul class="useful-links">
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Download Catalog</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Cookie Policy</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-4 col-md-4 padding-leftright-null">
-              <h6 class="heading white margin-bottom-extrasmall">Contact Us</h6>
-              <ul class="info">
-                <li>Phone <a href="">+39 123456789</a></li>
-                <li>Mail <a href="">treks@example.com</a></li>
-                <li>
-                  Monday to Friday <span class="white">9.00 am to 8.00 pm</span
-                 ><br>Saturday from
-                  <span class="white">9.00 am to 12.00 pm</span>
-                </li>
-                <li>
-                  <a href=""
-                   >322 Moon St, Venice<br>
-                    Italy, 1231</a
-                 >
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 padding-leftright-null">
-              <h6 class="heading white margin-bottom-extrasmall">
-                Passionate About Nature
-              </h6>
-              <p class="grey-light">
-                Sign up for Dolomia mounthly newsletter and get to know more
-                about our latest adventures and much mores...
-              </p>
-              <div id="newsletter-form" class="padding-onlytop-xs">
-                <form class="search-form">
-                  <div class="form-input">
-                    <input type="text" placeholder="Your email address">
-                    <span class="form-button">
-                      <button type="button">Sign Up</button>
-                    </span>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="copy">
-            <div class="row no-margin">
-              <div class="col-md-8 padding-leftright-null">
-              </div>
-              <div class="col-md-4 padding-leftright-null">
-                <ul class="social">
-                  <li>
-                    <a href=""
-                     ><i class="fa fa-facebook" aria-hidden="true"></i
-                   ></a>
-                  </li>
-                  <li>
-                    <a href=""
-                     ><i class="fa fa-twitter" aria-hidden="true"></i
-                   ></a>
-                  </li>
-                  <li>
-                    <a href=""
-                     ><i class="fa fa-instagram" aria-hidden="true"></i
-                   ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!--  END Footer. Class fixed for fixed footer  -->
-    </div>
-    <!--  Main Wrap  -->
+    {{> header }}
+    {{> @partial-block }}
+    {{> footer }}
   </body>
 </html>
