@@ -7,7 +7,7 @@ category: Trekking Expedition
 image: /assets/img/trips/athirappilly.jpg
 days: 7
 groupSize: 12
-difficulty: Easy
+difficulty: Low
 price: $1799
 date: April 23
 distance: 91 km

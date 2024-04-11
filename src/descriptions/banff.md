@@ -7,7 +7,7 @@ category: Trekking Expedition
 image: /assets/img/trips/banff.jpg
 days: 8
 groupSize: 8
-difficulty: Easy
+difficulty: Low
 price: $949
 date: August 5
 distance: 205 km
