@@ -24,13 +24,13 @@ introduction: Are you ready to transcend the ordinary and venture into the heart
 
 Our company is thrilled to introduce our guided expeditions into the mystical landscapes of Mustang, where ancient traditions, breathtaking natural beauty, and spiritual serenity await.
 
-## Why Mustang?
+### Why Mustang?
 
 Nestled amidst the majestic Himalayas, Mustang is a place where the sky touches the earth, where centuries-old monasteries perch precariously on cliffs, and where the vibrant Tibetan culture thrives in its purest form. This hidden kingdom, once forbidden to outsiders, opens its doors to adventurers seeking a journey unlike any other. From the awe-inspiring vistas of the Annapurna and Dhaulagiri ranges to the stark beauty of the high desert, Mustang is a testament to nature's artistry and human resilience.
 
 Our expeditions are meticulously designed to offer an immersive experience of Mustang's unique cultural and natural heritage. Led by experienced and knowledgeable guides, you will embark on a journey through time, exploring ancient villages, sacred caves, and stunning landscapes that few have the privilege to witness.
 
-## Highlights
+### Highlights
 
 **Lo Manthang**: The walled city of Lo Manthang, the capital of Mustang, is a treasure trove of history and culture. Wander through its narrow alleys, visit the royal palace, and immerse yourself in the local way of life.
 
@@ -40,7 +40,7 @@ Our expeditions are meticulously designed to offer an immersive experience of Mu
 
 **Sustainable Travel**: We are committed to responsible and sustainable travel practices, ensuring that our expeditions contribute positively to the local communities and preserve the natural and cultural heritage of Mustang.
 
-## Join Us
+### Join Us
 
 Our expeditions to Mustang are more than just a trek; they are a journey of discovery, offering a profound connection with nature, culture, and oneself. Whether you're an avid trekker, a cultural enthusiast, or someone seeking spiritual solace, Mustang has something unique to offer.
 

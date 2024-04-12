@@ -1,5 +1,6 @@
 <!-- Page for a single trek -->
 {{#> page title=name areaIsTreks=true}}
+
   {{#>hero}}
     <h1>
       {{ name }}
@@ -8,213 +9,97 @@
       {{ subhead }}
     </p>
   {{/hero}}
-  <!--  END Slider  -->
-  <div id="post-wrap" class="content-section fullpage-wrap">
-    <!-- Section same Height. Child get the parent Height. Set the same id -->
-    <div class="row margin-leftright-null">
-      <div class="container">
-        <!-- About -->
-        <div class="col-lg-6 padding-leftright-null">
-          <div class="text padding-lg-bottom-null">
-            <h2 class="margin-bottom-null title line left">
-              {{ category }}
-            </h2>
-            <p class="heading left grey margin-bottom-null">
-              {{ destination }}
-            </p>
-            <div class="padding-onlytop-md">
-              <p>
-                {{ introduction }}
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- END About -->
-        <div class="col-lg-6 padding-leftright-null">
-          <div class="text padding-md-top-null height-auto-lg">
-            <div
-              class="
-                grey-background
-                box-shadow
-                text
-                responsive-padding-sm
-              "
-           >
-              <!-- Hiker -->
-              <div class="hiker">
-                <img src="{{ avatar }}" alt="">
-                <h3 class="">Your Guide</h3>
-                <span class="meta grey">Name: {{ guide }}</span>
-                <span class="meta grey">Nation: {{ country }}</span>
-                <ul class="social">
-                  <li>
-                    <a href="/"><i class="icon ion-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"
-                     ><i class="icon ion-social-dribbble"></i
-                   ></a>
-                  </li>
-                  <li>
-                    <a href="/"
-                     ><i class="icon ion-social-instagram"></i
-                   ></a>
-                  </li>
-                  <li>
-                    <a href="/"
-                     ><i class="icon ion-social-snapchat"></i
-                   ></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- END Hiker -->
-            </div>
-          </div>
+
+  <section class="summary centerColumn white">
+    <div class="autoColumns">
+      <div>
+        <div class="verticalLine"></div>
+        <h2>
+          {{ category }}
+        </h2>
+        <p class="subhead">
+          {{ destination }}
+        </p>
+        <p>
+          {{ introduction }}
+        </p>
+      </div>
+      <div class="guide">
+        <img src="{{ avatar }}">
+        <h3 class="">Your Guide</h3>
+        <div>
+          <div class="meta grey">Name: {{ guide }}</div>
+          <div class="meta grey">Nation: {{ country }}</div>
         </div>
       </div>
     </div>
-    <!-- END Section same Height. Child get the parent Height. Set the same id -->
-    <!--  Section Image Background with overlay  -->
-    <div class="row margin-leftright-null grey-background">
-      <div
-        class="bg-img overlay simple-parallax responsive"
-        style="background-image: url(../assets/img/testimonials.jpg)"
-     >
-        <div class="container">
-          <!-- Trek data -->
-          <div class="text trek-data text-center">
-            <div class="col-sm-4 col-md-2">
-              <i
-                class="pd-icon-money service big margin-bottom-null white"
-             ></i>
-              <em class="color">Price</em>
-              <h3 class="white">{{ price }}</h3>
-            </div>
-            <div class="col-sm-4 col-md-2">
-              <i
-                class="pd-icon-hour service big margin-bottom-null white"
-             ></i>
-              <em class="color">Date</em>
-              <h3 class="white">{{ date }}</h3>
-            </div>
-            <div class="col-sm-4 col-md-2">
-              <i
-                class="
-                  pd-icon-camp-bag
-                  service
-                  big
-                  margin-bottom-null
-                  white
-                "
-             ></i>
-              <em class="color">Difficulty</em>
-              <h3 class="white">{{ difficulty }}</h3>
-            </div>
-            <div class="col-sm-4 col-md-2">
-              <i
-                class="pd-icon-male service big margin-bottom-null white"
-             ></i>
-              <em class="color">Max Group Size</em>
-              <h3 class="white">{{ groupSize }}</h3>
-            </div>
-            <div class="col-sm-4 col-md-2">
-              <i
-                class="pd-icon-watch service big margin-bottom-null white"
-             ></i>
-              <em class="color">Days</em>
-              <h3 class="white">{{ days }}</h3>
-            </div>
-            <div class="col-sm-4 col-md-2">
-              <i
-                class="
-                  pd-icon-distance
-                  service
-                  big
-                  margin-bottom-null
-                  white
-                "
-             ></i>
-              <em class="color">Distance</em>
-              <h3 class="white">{{ distance }}</h3>
-            </div>
-          </div>
-          <!-- END Trek data -->
+  </section>
+
+  <section class="callout">
+    <div class="background"></div>
+    <div class="centerColumn">
+      <div class="autoColumns trekFacts">
+        <div>
+          <div class="icon pd-icon-money"></div>
+          <div class="label">Price</div>
+          <div class="value">{{ price }}</div>
+        </div>
+        <div>
+          <div class="icon pd-icon-hour"></div>
+          <div class="label">Date</div>
+          <div class="value">{{ date }}</div>
+        </div>
+        <div>
+          <div class="icon pd-icon-camp-bag"></div>
+          <div class="label">Difficulty</div>
+          <div class="value">{{ difficulty }}</div>
+        </div>
+        <div>
+          <div class="icon pd-icon-male"></div>
+          <div class="label">Max Group Size</div>
+          <div class="value">{{ groupSize }}</div>
+        </div>
+        <div>
+          <div class="icon pd-icon-watch"></div>
+          <div class="label">Days</div>
+          <div class="value">{{ days }}</div>
+        </div>
+        <div>
+          <div class="icon pd-icon-distance"></div>
+          <div class="label">Distance</div>
+          <div class="value">{{ distance }}</div>
         </div>
       </div>
     </div>
-    <!--  END Section Image Background with overlay  -->
-    <!-- Description Trek -->
-    <div class="row margin-leftright-null">
-      <div class="container">
-        <div class="col-md-12 text padding-bottom-null text-center">
-          <h2 class="margin-bottom-null title line center">More info</h2>
-          <!--
-          <p class="heading center grey margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-          -->
-        </div>
-        <div class="col-md-12 text">
-  {{{ [@text] }}}
-        </div>
-      </div>
-    </div>
-    <!-- END Description Trek -->
-    <!--  Share Btn  -->
-    <div id="share">
-      <a class="share-btn">
-        <i class="icon ion-android-share-alt"></i>
-      </a>
-      <div class="share-icons" style="display: none">
-        <a href="/" class="share-google">
-          <i class="fa fa-google-plus" aria-hidden="true"></i>
-        </a>
-        <a href="/" class="share-twitter">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a href="/" class="share-linkedin">
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="/" class="share-mail">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-      </div>
-    </div>
-    <!--  END Share Btn  -->
-    <!-- Similar Trips -->
-    <div
-      id="showcase-treks"
-      class="text padding-bottom-null grey-background center"
-   >
-      <div class="container">
-        <div class="col-md-12 padding-leftright-null text-center">
-          <h2 class="margin-bottom-null title line center">
-            Related trips
-          </h2>
-          <p class="heading center grey margin-bottom-null">
-            for the upcoming year
-          </p>
-        </div>
-        {{> cards links }}
-      </div>
-    </div>
-    <!-- END Similar Trips -->
-    <!-- Call to Action -->
-    <div class="row text margin-leftright-null color-background">
-      <div class="col-md-12 text-center">
-        <h4 class="big white">
-          Would you like more info about this trip?
-        </h4>
-        <h4 class="big margin-bottom-small white">
-          Call us at
-          <a href="/" class="btn-pro simple white">+40 45615654</a> or
-        </h4>
-        <a
-          href="../#"
-          target="_blank"
-          class="btn-alt small white margin-null active shadow"
-         >Contact us</a
-       >
-      </div>
-    </div>
-    <!-- END Call to Action -->
-  </div>
+  </section>
+
+  <section class="centerColumn white">
+    <div class="verticalLine"></div>
+    <h2>
+      More Info
+    </h2>
+    <p class="subhead">
+      lorem ipsum
+    </p>
+    {{{ [@text] }}}
+  </section>
+
+  <section class="centerColumn">
+    <div class="verticalLine"></div>
+    <h2>
+      Related trips
+    </h2>
+    <p class="subhead">
+      for the coming year
+    </p>
+    {{> cards links }}
+  </section>
+
+  <section class="centerColumn callToAction">
+    <h2>This journey begins with the first step</h2>
+    <p>
+      <a href="/contact.html" class="action">Contact Us</a>
+    </p>
+  </section>
+
 {{/page}}

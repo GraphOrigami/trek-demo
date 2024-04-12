@@ -26,7 +26,7 @@ The park is one of the 11 protected areas of the Magallanes Region and Chilean A
 
 The Torres del Paine are the distinctive three granite peaks of the Paine mountain range or Paine Massif. From left to right they are known as Torres d'Agostini, Torres Central and Torres Monzino. They extend up to 2,500 meters above sea level, and are joined by the Cuernos del Paine. The area also boasts valleys, rivers such as the Paine, lakes, and glaciers. The well-known lakes include Grey Lake, Lake Pehoé, Nordenskjöld Lake, and Sarmiento Lake. The glaciers, including Grey Glacier, Pingo and Tyndall Glacier (Chile), belong to the Southern Patagonia Ice Field.
 
-## History
+### History
 
 Lady Florence Dixie, in her book published in 1880, gave one of the first descriptions of the area and referred to the three towers as Cleopatra's Needles. She and her party are sometimes credited as being the first "foreign tourists" to visit the area that is now called Torres del Paine National Park.
 
@@ -38,7 +38,7 @@ In 1976, British mountaineer John Garner and two Torres del Paine rangers, Pepe 
 
 In 1977, Guido Monzino donated 12,000 hectares to the Chilean Government when its definitive limits were established. The park was designated a World Biosphere Reserve by UNESCO in 1978.
 
-## Climate
+### Climate
 
 According to the Köppen climate classification, the park lies in the “temperate climate of cold rain without a dry season." The meteorological conditions of the park are variable due to the complex orography. The park is famous for strong winds. The windiest months are November - January, which coincides with the peak tourism season.
 
@@ -46,7 +46,7 @@ The zone is characterized by cool summers, with temperatures lower than 16°C du
 
 The rainiest months are March and April, with a monthly average rainfall of 80&nbsp;mm. This represents double the July–October (winter) rainfall, which are the drier months. A study of the exact chemical components of the precipitation in the park has been carried out.
 
-## Geography
+### Geography
 
 The landscape of the park is dominated by the Paine massif, which is an eastern spur of the Andes located on the east side of the Grey Glacier, rising dramatically above the Patagonian steppe. Small valleys separate the spectacular granite spires and mountains of the massif. These are: Valle del Francés (French Valley), Valle Bader, Valle Ascencio, and Valle del Silencio (Silence Valley).
 

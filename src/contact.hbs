@@ -6,63 +6,34 @@
     </h1>
   {{/hero}}
 
-  <!--  Page Content, class footer-fixed if footer is fixed  -->
-  <div id="page-content" class="header-static footer-fixed">
-      <div id="page-wrap" class="content-section fullpage-wrap">
-          <div class="row margin-leftright-null">
-              <div class="container">
-                  <!--  Contact Info  -->
-                  <div class="col-md-6 padding-leftright-null">
-                      <div class="text">
-                          <h2 class="margin-bottom-null title line left">Get in touch Person</h2>
-                          <p class="heading center grey margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                          <div class="padding-onlytop-md">
-                              <p class="margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit. Qui!</p>
-                              <p><span class="contact-info">Address <em>322 Moon St, Venice
-                                  Italy, 1231</em></span><br><span class="contact-info">Phone <em>0039 12345 6789</em></span><br><span class="contact-info">Email <a href="#"><em>hello@matelick.com</em></a></span></p>
-                              <p class="margin-md-bottom-null"><span class="contact-info">Monday to Friday <em>9.00 am to 12.00 pm</em></span><br><span class="contact-info">Saturday from <em>9.00 am to 12.00 pm</em></span></p>
-                          </div>
-                      </div>
-                  </div>
-                  <!--  END Contact Info -->
-                  <!--  Input Form  -->
-                  <div class="col-md-6 padding-leftright-null">
-                      <div class="text padding-onlybottom-sm padding-md-top-null">
-                          <form id="contact-form" class="padding-onlytop-md padding-md-topbottom-null">
-                              <div class="row">
-                                  <div class="col-md-12">
-                                      <input class="form-field" name="name" id="name" type="text" placeholder="Name">
-                                  </div>
-                                  <div class="col-md-12">
-                                      <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
-                                  </div>
-                                  <div class="col-md-12">
-                                      <input class="form-field" name="subjectForm" id="subjectForm" type="text" placeholder="Subject">
-                                  </div>
-                              </div>
-                              <div class="row">
-                                  <div class="col-md-12">
-                                      <textarea class="form-field" name="messageForm" id="messageForm" rows="6" placeholder="Your Message"></textarea>
-                                      <div class="submit-area padding-onlytop-sm">
-                                          <input type="submit" id="submit-contact" class="btn-alt" value="Send Message">
-                                          <div id="msg" class="message"></div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </form>
-                      </div>
-                  </div>
-                  <!--  END Input Form  -->
-              </div>
-          </div>
-          <div class="row margin-leftright-null">
-              <!--  Map. Settings in assets/js/maps.js  -->
-              <div class="col-md-12 padding-leftright-null map">
-                  <div id="map"></div>
-              </div>
-              <!--  END Map  -->
-          </div>
+  <section class="centerColumn white contact">
+    <div class="autoColumns">
+      <div>
+        <div class="verticalLine"></div>
+        <h2>Start your journey</h2>
+        <p class="subhead">Contact our team</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem harum aspernatur sapiente error, voluptas fuga, laudantium ullam magni fugit. Qui!</p>
+        <p class="info">
+          <strong>Address</strong> 322 Moon St, Venice Italy, 1231
+          <br>
+          <strong>Phone</strong> 0039 12345 6789
+          <br>
+          <strong>Email</strong> <a href="mailto:info@example.com">info@example.com</a>
+        </p>
+        <p>
+          <strong>Monday to Friday</strong> 9:00 am to 5:00 pm
+          <br>
+          <strong>Saturday</strong> 9:00 am to 12:00 pm
+        </p>
       </div>
-  </div>
-  <!--  END Page Content, class footer-fixed if footer is fixed  -->
+      <form>
+        <input name="name" type="text" placeholder="Name">
+        <input name="mail" type="text" placeholder="Email">
+        <input name="subject" type="text" placeholder="Subject">
+        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+        <input type="submit" class="action" value="Send Message">
+      </form>
+    </div>
+  </section>
+
 {{/page}}

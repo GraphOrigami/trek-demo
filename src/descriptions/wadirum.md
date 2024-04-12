@@ -24,13 +24,13 @@ introduction: Step into the legendary landscapes of Wadi Rum, also known as the 
 
 Join us on a climbing expedition where the ancient rocks and sweeping sands of Wadi Rum will be the backdrop to an adventure of a lifetime.
 
-## Why Wadi Rum?
+### Why Wadi Rum?
 
 Wadi Rum's unique geological formations, including towering cliffs, natural arches, and narrow gorges, have captivated climbers and adventurers from around the world. The desert landscape, marked by its reddish sand and dramatic jebels (mountains), offers routes for every level of climber, from beginner to expert. The area is not just a climber's paradise but a place of profound natural beauty and tranquility, where the silence is broken only by the wind and the call of desert birds.
 
 Our expeditions are tailored to provide an authentic and thrilling climbing experience in Wadi Rum, led by experienced local Bedouin guides who know the desert's secrets. We emphasize safety, environmental respect, and cultural sensitivity, ensuring that your adventure is not only exhilarating but also harmonious with the land and its people.
 
-## Highlights
+### Highlights
 
 **Diverse Climbing Routes**: From classic traditional climbs to challenging sport routes, Wadi Rum's diverse terrain offers something for every climber. Tackle famous formations like Jebel Rum and the Burdah Rock Bridge, experiencing the thrill of ascent amidst breathtaking scenery.
 
@@ -40,7 +40,7 @@ Our expeditions are tailored to provide an authentic and thrilling climbing expe
 
 **Sustainable Adventure**: We are committed to preserving the pristine beauty of Wadi Rum for future generations. Our expeditions follow strict leave-no-trace principles and support local conservation efforts, ensuring that our impact on the environment is minimal.
 
-## Join Us
+### Join Us
 
 An expedition to Wadi Rum is more than a climbing trip; it's an adventure that tests your limits and expands your horizons. It's an opportunity to experience the profound silence and vastness of the desert, to climb the same ancient rocks that have been a silent witness to history unfolding.
 

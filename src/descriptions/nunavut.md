@@ -24,13 +24,13 @@ introduction: Venture into the heart of the Canadian Arctic with our unparallele
 
 For the ambitious climber, it presents an extraordinary opportunity to test their skills against some of the most formidable rock faces in the world.
 
-## Why Auyuittuq National Park?
+### Why Auyuittuq National Park?
 
 Auyuittuq National Park is a climber's paradise, boasting iconic peaks such as Mount Asgard and Mount Thor, the latter featuring the world's tallest vertical drop. Beyond its climbing challenges, the park is a place of stunning natural beauty, from the serenity of the Pangnirtung Fjord to the awe-inspiring glaciers that carve through its landscape. This is a land where nature reigns supreme, offering climbers not just a physical challenge but a profound connection with the wilderness.
 
 Our climbing expeditions are designed to offer an immersive Arctic adventure, led by expert guides familiar with the unique challenges and beauty of Auyuittuq National Park. We prioritize safety and environmental stewardship, ensuring that our presence respects the delicate Arctic ecosystem and supports the preservation of this incredible national park.
 
-## Highlights
+### Highlights
 
 **Elite Climbing Opportunities**: Tackle some of the most exhilarating climbs in the world, including the sheer faces of Mount Asgard and the unyielding ascent of Mount Thor. These peaks are not just climbs; they are epic journeys that test your endurance, skill, and spirit.
 
@@ -40,7 +40,7 @@ Our climbing expeditions are designed to offer an immersive Arctic adventure, le
 
 **Commitment to Conservation**: Auyuittuq National Park is a protected wilderness area, and our expeditions are conducted with the utmost respect for its ecological and cultural significance. We follow strict leave-no-trace principles and collaborate with park authorities to ensure our adventures are sustainable.
 
-## Join the Adventure
+### Join the Adventure
 
 Our Auyuittuq National Park climbing expedition is an invitation to embark on an adventure that is as mentally and physically rewarding as it is awe-inspiring. This journey is about more than conquering peaks; it's about discovering the strength within yourself and forging a deep connection with one of the most pristine and challenging landscapes on Earth.
 

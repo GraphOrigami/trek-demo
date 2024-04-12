@@ -9,13 +9,14 @@
 
 body {
   --color-accent: #cbbd9a;
+  --color-background-light: #f6f6f6;
   --color-text-dark: #2f2911;
   --color-text-light-on-dark: #d1d2d3;
   --color-text-light: #6e6b66;
   --font-family-heading: "Montserrat", sans-serif;
   --font-family-nav: "Open Sans", sans-serif;
   --font-family-subhead: "Open Sans", sans-serif;
-  background: #f6f6f6;
+  background: var(--color-background-light);
   color: var(--color-text-light);
   font-family: "Trirong", serif;
   font-size: 14px;
@@ -31,22 +32,30 @@ section {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   color: var(--color-text-dark);
   font-family: var(--font-family-heading);
   font-weight: 400;
-  letter-spacing: 0.5px;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  letter-spacing: 0.5px;
 }
 
 h2 {
   font-size: 26px;
   font-weight: 400;
-  letter-spacing: 0;
   line-height: 40px;
   text-align: center;
   text-shadow: 2px 2px 40px #888b8d;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
@@ -88,17 +97,18 @@ blockquote {
 
 .centerColumn {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) min(2vw, 50px) minmax(0, 970px) minmax(0, 1fr) min(2vw, 50px);
+  grid-template-columns: 1fr min(2vw, 50px) minmax(0, 970px) min(2vw, 50px) 1fr;
 
   & > * {
     grid-column: 3;
   }
 }
 
-.threeColumns {
+.autoColumns {
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
 }
 
 .sellingPoint {
@@ -141,18 +151,30 @@ blockquote {
   width: 2px;
 }
 
-.testimonial {
-  color: white;
-  position: relative;
+.action {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-family: var(--font-family-nav);
+  letter-spacing: 1px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  transition: background 0.5s ease, color 0.5s ease;
 
-  img {
-    filter: brightness(0.5);
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+  &:hover {
+    background: var(--color-accent);
+    color: white;
+  }
+
+  &.inverse {
+    background: var(--color-accent);
+    color: white;
+
+    &:hover {
+      background: white;
+      color: var(--color-accent);
+    }
   }
 }
 
@@ -237,21 +259,6 @@ nav {
     font-size: 16px;
     text-shadow: 0 0 10px black;
   }
-
-  a {
-    background: var(--color-accent);
-    border-radius: 2px;
-    font-family: var(--font-family-nav);
-    letter-spacing: 1px;
-    padding: 12px 30px;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-
-    &:hover {
-      background: white;
-      color: var(--color-accent);
-    }
-  }
 }
 
 /* Thumbnail gallery */
@@ -310,7 +317,6 @@ nav {
 
   img {
     aspect-ratio: 4 / 3;
-    filter: brightness(0.7);
     object-fit: cover;
     width: 100%;
   }
@@ -328,7 +334,7 @@ nav {
       }
     }
     
-    .facts {
+    .cardFacts {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       
@@ -346,13 +352,6 @@ nav {
       }
     }
 
-    .category {
-      color: var(--color-text-dark);
-      font-family: var(--font-family-heading);
-      font-size: 16px;
-      text-transform: uppercase;
-    }
-
     .name {
       color: var(--color-text-dark);
       font-size: 16px;
@@ -361,6 +360,26 @@ nav {
     .destination {
       font-size: 14px;
     }
+  }
+}
+
+.callout {
+  color: white;
+  position: relative;
+
+  .background {
+    background-attachment: fixed;
+    background-image: url(/assets/img/trips/testimonials.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.6);
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
 }
 
@@ -384,6 +403,86 @@ nav {
   }
 }
 
+/* Trek summary */
+
+.summary {
+  .autoColumns {
+    gap: 80px;
+  }
+}
+
+/* Guide card */
+.guide {
+  background: var(--color-background-light);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+  display: grid;
+  gap: 8px;
+  font-size: 16px;
+  justify-items: center;
+  padding: 50px;
+  text-align: center;
+
+  img {
+    border-radius: 50%;
+    width: 60px;
+  }
+}
+
+/* Trek facts */
+.trekFacts {
+  font-size: 16px;
+  text-align: center;
+
+  .icon {
+    font-size: 50px;
+  }
+
+  .label {
+    color: var(--color-accent);
+    font-family: var(--font-family-heading);
+  }
+}
+
+/* Call to action */
+.callToAction {
+  background: var(--color-accent);
+  color: white;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+
+  h2 {
+    color: inherit;
+  }
+
+  .action {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 30px 0px;
+    border-color: white;
+  }
+}
+
+/* Contact Us */
+.contact {
+  form {
+    align-self: start;
+    display: grid;
+    gap: 25px;
+
+    input[type="text"], textarea {
+      background: var(--color-background-light);
+      border-radius: 2px;
+      border: none;
+      font-family: inherit;
+      font-size: 14px;
+      padding: 9px;
+    }
+
+    input[type="submit"] {
+      justify-self: start;
+    }
+  }
+}
+
 /* Footer */
 footer {
   background: #444;
@@ -403,6 +502,38 @@ footer {
       list-style-type: none;
       margin: 0;
       padding: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  .textWithButton {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    --border-radius: 3px;
+
+    input {
+      border: none;
+      padding: 9px;
+      font-family: var(--font-family-heading);
+      font-size: 14px;
+    }
+
+    input:first-child {
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    input:last-child {
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    }
+
+    .action {
+      letter-spacing: initial;
+      padding: 9px 18px;
+      text-transform: initial;
     }
   }
 }
