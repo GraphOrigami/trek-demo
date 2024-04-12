@@ -32,6 +32,13 @@
   src: url("/assets/fonts/Montserrat-Regular.ttf");
 }
 
+@font-face {
+  font-family: "puredesign";
+  font-style: normal;
+  font-weight: normal;
+  src:url("/assets/fonts/puredesign.ttf");
+}
+
 /* Standard elements */
 
 * {
@@ -622,4 +629,56 @@ footer {
       text-transform: initial;
     }
   }
+}
+
+/* Pure Design icons */
+[data-icon]:before {
+  font-family: "puredesign" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="pd-icon-"]:before,
+[class*=" pd-icon-"]:before {
+  font-family: "puredesign" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pd-icon-camp-bag:before {
+  content: "\6b";
+}
+.pd-icon-camping-knife:before {
+  content: "\6c";
+}
+.pd-icon-distance:before {
+  content: "\6f";
+}
+.pd-icon-hour:before {
+  content: "\61";
+}
+.pd-icon-male:before {
+  content: "\43";
+}
+.pd-icon-money:before {
+  content: "\42";
+}
+.pd-icon-sunrise:before {
+  content: "\64";
+}
+.pd-icon-watch:before {
+  content: "\62";
 }
