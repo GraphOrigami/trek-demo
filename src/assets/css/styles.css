@@ -22,6 +22,10 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
+
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
 }
 
 section {
@@ -91,6 +95,33 @@ blockquote {
   em {
     color: rgb(209, 210, 211);
   }
+}
+
+dialog {
+  border: none;
+  box-shadow: 0 0 10px black;
+  left: 50%;
+  margin: 0;
+  max-height: 95vh;
+  max-width: 95vw;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+dialog:focus-visible {
+  outline: none;
+}
+
+dialog img {
+  background: black;
+  display: block;
+  max-height: 95vh;
+  max-width: 95vw;
+  object-fit: contain;
 }
 
 /* Common elements */
@@ -458,6 +489,19 @@ nav {
   .action {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 30px 0px;
     border-color: white;
+  }
+}
+
+/* Image gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  img {
+    aspect-ratio: 1;
+    display: block;
+    object-fit: cover;
+    width: 100%;
   }
 }
 

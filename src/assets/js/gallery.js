@@ -16,6 +16,7 @@ function showImageDialog(img) {
 }
 
 window.addEventListener("load", () => {
+  const gallery = document.querySelector(".gallery");
   gallery.addEventListener("click", (event) => {
     if (event.target.localName === "img") {
       event.stopPropagation();

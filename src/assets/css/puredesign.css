@@ -9,7 +9,6 @@
         url("../fonts/puredesign.svg#puredesign") format("svg");
   font-weight: normal;
   font-style: normal;
-
 }
 
 [data-icon]:before {
@@ -38,92 +37,90 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 .pd-icon-hour:before {
-    content: "\61";
+  content: "\61";
 }
 .pd-icon-watch:before {
-    content: "\62";
+  content: "\62";
 }
 .pd-icon-t-shirt:before {
-    content: "\63";
+  content: "\63";
 }
 .pd-icon-sunrise:before {
-    content: "\64";
+  content: "\64";
 }
 .pd-icon-sport-shoe:before {
-    content: "\65";
+  content: "\65";
 }
 .pd-icon-mobile:before {
-    content: "\66";
+  content: "\66";
 }
 .pd-icon-map-pin:before {
-    content: "\67";
+  content: "\67";
 }
 .pd-icon-mail:before {
-    content: "\68";
+  content: "\68";
 }
 .pd-icon-camera:before {
-    content: "\69";
+  content: "\69";
 }
 .pd-icon-bad:before {
-    content: "\6a";
+  content: "\6a";
 }
 .pd-icon-camp-bag:before {
-    content: "\6b";
+  content: "\6b";
 }
 .pd-icon-camping-knief:before {
-    content: "\6c";
+  content: "\6c";
 }
 .pd-icon-cloud:before {
-    content: "\6d";
+  content: "\6d";
 }
 .pd-icon-cloudy-day:before {
-    content: "\6e";
+  content: "\6e";
 }
 .pd-icon-distance:before {
-    content: "\6f";
+  content: "\6f";
 }
 .pd-icon-fork-knife:before {
-    content: "\70";
+  content: "\70";
 }
 .pd-icon-french-fries:before {
-    content: "\71";
+  content: "\71";
 }
 .pd-icon-hotel-sign:before {
-    content: "\72";
+  content: "\72";
 }
 .pd-icon-increasing-chart:before {
-    content: "\73";
+  content: "\73";
 }
 .pd-icon-juice:before {
-    content: "\74";
+  content: "\74";
 }
 .pd-icon-map-pin-streamline:before {
-    content: "\75";
+  content: "\75";
 }
 .pd-icon-streamline-umbrella-weather:before {
-    content: "\76";
+  content: "\76";
 }
 .pd-icon-cloud-1:before {
-    content: "\77";
+  content: "\77";
 }
 .pd-icon-cloudy:before {
-    content: "\78";
+  content: "\78";
 }
 .pd-icon-rain:before {
-    content: "\79";
+  content: "\79";
 }
 .pd-icon-man-people-streamline-user:before {
-    content: "\7a";
+  content: "\7a";
 }
 .pd-icon-new:before {
-    content: "\41";
+  content: "\41";
 }
 .pd-icon-money:before {
-    content: "\42";
+  content: "\42";
 }
 .pd-icon-male:before {
-    content: "\43";
+  content: "\43";
 }
-
