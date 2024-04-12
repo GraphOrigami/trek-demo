@@ -1,5 +1,36 @@
-/* TODO: Remove */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i|Open+Sans:300,300i,400,400i|Trirong:300,300i,400,400i&display=swap");
+/* Fonts */
+
+@font-face {
+  font-display: fallback;
+  font-family: "Trirong";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Trirong-Regular.ttf");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Trirong";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/fonts/Trirong-Italic.ttf");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Montserrat-Regular.ttf");
+}
 
 /* Standard elements */
 
@@ -15,7 +46,6 @@ body {
   --color-text-light: #6e6b66;
   --font-family-heading: "Montserrat", sans-serif;
   --font-family-nav: "Open Sans", sans-serif;
-  --font-family-subhead: "Open Sans", sans-serif;
   background: var(--color-background-light);
   color: var(--color-text-light);
   font-family: "Trirong", serif;
@@ -39,7 +69,7 @@ section {
 h1, h2, h3 {
   color: var(--color-text-dark);
   font-family: var(--font-family-heading);
-  font-weight: 400;
+  font-weight: normal;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +80,7 @@ h1 {
 
 h2 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 40px;
   text-align: center;
   text-shadow: 2px 2px 40px #888b8d;
@@ -166,11 +196,9 @@ dialog img {
 }
 
 .subhead {
-  font-family: var(--font-family-subhead);
   font-size: 16px;
   font-style: italic;
-  font-weight: 300;
-  line-height: 20px;
+  letter-spacing: 0.4px;
   margin: 0 0 3em 0;
   text-align: center;
   text-wrap: balance;
@@ -220,7 +248,6 @@ header {
   color: white;
   font-family: var(--font-family-nav);
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.5px;
   position: fixed;
   transition: background-color 0.5s ease, color 0.5s ease;
