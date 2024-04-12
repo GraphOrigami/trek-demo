@@ -1,19 +1,12 @@
 <!-- Top navigation bar -->
 <header class="centerColumn">
   <nav>
-    <a href="/">
-      <img
-        id="logoBlack"
-        src="/assets/img/logo.png" 
-        srcset="/assets/img/logo.png 1x, /assets/img/logo@2x.png 2x" 
-        alt="logo"
-      >
-      <img
-        id="logoWhite"
-        src="/assets/img/logo_white.png" 
-        srcset="/assets/img/logo_white.png 1x, /assets/img/logo_white@2x.png 2x" 
-        alt="logo"
-      >
+    <a id="linkLogo" href="/">
+      <svg>
+        <use href="/assets/img/logo.svg#logo"></use>
+      </svg>
+      <h3>aventour</h3>
+      <h3 class="small">expeditions</h3>
     </a>
     <a href="/" id="linkHome"{{#if areaIsHome}} class="active"{{/if}}>Home</a>
     <a href="/treks/"{{#if areaIsTreks}} class="active"{{/if}}>Treks</a>
