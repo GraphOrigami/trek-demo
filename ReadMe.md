@@ -1,10 +1,20 @@
-This Origami demo is a rough sketch of a site for an adventure trekking company.
+This is a sample site for an adventure trekking company written in the [Origami](https://weborigami.org) language.
 
-[View demo](https://origami-trek-demo.netlify.app/)
+[View site](https://aventour-expeditions.netlify.app/)
 
-The [site.ori](src/site.ori) file orchestrates the transformations to produce the site:
+## Using Handlebars templates
 
-- Trek descriptions in the `src/descriptions` folder include markdown with YAML front matter. These are converted to HTML, then have a page template applied.
-- The same trek descriptions are fed to the index.html template so that the home page can include tiles for each trek.
+This sample shows the use of a separate template language, [Handlebars](https://handlebarsjs.com/), in an Origami site. Origami includes a powerful [template language](https://weborigami.org/language/templates) of its own, but if you're more comfortable with a different template language, it's possible to write a custom file handler so that Origami knows how to invoke templates in that language. This sample uses a [Handlebars extension](https://github.com/WebOrigami/extensions/tree/main/handlebars) to tell Origami how to load Handlebars templates from `.hbs` files.
+
+## Structure of the site
+
+The [site.ori](src/site.ori) file orchestrates the construction of the site:
+
+<img src="docs/site.svg">
+
+- Trek descriptions in the `src/descriptions` folder include markdown with YAML front matter.
+- The complete set of trek descriptions is used to generate the site's Treks area: one page for each trek, as well as an area home page showing the complete list.
+- A subset of trek descriptions are fed to the index.hbs template so that it can show those as featured treks.
+- The site's Gallery page wants to show all of the images in the `src/assets/images/trips` folder. The `site.ori` file gets the list of images in that folder, then hands it to a template to generate the Gallery page.
 
 The site's visual style is based on the [Dolomia WordPress Theme](https://themeforest.net/item/dolomia-hiking-outdoor-mountain-guide-wordpress-theme/20086652) but completely rewritten to use more contemporary CSS.

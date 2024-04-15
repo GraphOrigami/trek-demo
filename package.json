@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "ori @copy src/site.ori/public, @mkdir/build",
+    "docs": "ori '@svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
     "start": "ori @serve @watch src, =@debug site.ori/public"
   }
 }

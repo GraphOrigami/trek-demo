@@ -1,0 +1,15 @@
+# This file sketches the site structure used to generate an explanatory diagram.
+assets: "Stylesheet, fonts, etc."
+contact.html: "Contact form"
+gallery.html: "Photo gallery"
+index.html: "Home page showing subset of treks"
+treks:
+  index.html: "Trek area home page"
+  banff.html: "Trek description"
+  hangen.html: "Trek description"
+  mathikettan.html: "Trek description"
+  mustang.html: "Trek description"
+  nunavut.html: "Trek description"
+  patagonia.html: "Trek description"
+  torres.html: "Trek description"
+  wadirum.html: "Trek description"
