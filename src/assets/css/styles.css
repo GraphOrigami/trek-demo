@@ -284,7 +284,7 @@ nav {
     display: grid;
 
     .small {
-      font-size: smaller;
+      font-size: 13px;
     }
 
     h3 {
