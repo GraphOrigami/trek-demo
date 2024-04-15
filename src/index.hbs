@@ -1,144 +1,146 @@
 <!-- Home page -->
-{{#> page title="Aventour Expeditions" areaIsHome=true}}
+{{#with this as |treks|}}
+  {{#> page title="Aventour Expeditions" areaIsHome=true}}
 
-  {{#> hero image="/assets/img/trips/trip6.jpg"}}
-    <h1>
-      Start your adventure
-    </h1>
-    <p class="tagline">
-      Guided expeditions to go beyond your limits
-    </p>
-    <div>
-      <a href="/treks" class="action inverse">View Treks</a>
+    {{#> hero image="/assets/img/trips/trip6.jpg"}}
+      <h1>
+        Start your adventure
+      </h1>
+      <p class="tagline">
+        Guided expeditions to go beyond your limits
+      </p>
+      <div>
+        <a href="/treks" class="action inverse">View Treks</a>
+      </div>
+    {{/hero}}
+
+    <section class="centerColumn white">
+      <div>
+        <h2>About Us</h2>
+        <p class="subhead">
+          Transformative journeys, not just travel
+        </p>
+        <p>
+          Whether you're scaling the majestic peaks of the Himalayas, exploring
+          the lush rainforests of the Amazon, or trekking through the pristine
+          wilderness of Patagonia, our expert guides ensure a safe, memorable,
+          and enriching adventure. Each of our expeditions is carefully crafted
+          to bring you closer to the heart of nature and the thrill of
+          exploration. Join us at Aventour Expeditions to discover new horizons,
+          challenge your limits, and create unforgettable memories in the great
+          outdoors.
+        </p>
+      </div>
+    </section>
+
+    <section class="centerColumn">
+      <div class="autoColumns">
+        <div class="sellingPoint">
+          <div class="icon pd-icon-sunrise"></div>
+          <h3>
+            Awesome destinations
+          </h3>
+          <p>
+            From the icy realms of Antarctica to the desert vistas of Morocco,
+            and from the volcanic trails of Iceland to the ancient pathways of
+            the Inca Trail in Peru, we offer an adventure for every explorer.
+          </p>
+        </div>
+        <div class="sellingPoint">
+          <div class="icon pd-icon-camping-knife"></div>
+          <h3>
+            Professional team
+          </h3>
+          <p>
+            Our guides and support staff are seasoned adventurers with extensive
+            local knowledge and trained in travel logistic, first aid, and
+            customer care.
+          </p>
+        </div>
+        <div class="sellingPoint">
+          <div class="icon pd-icon-camp-bag"></div>
+          <h3>
+            Complete support
+          </h3>
+          <p>
+            Our guides are with you long before you set foot on the trail, helping
+            you prepare for your journey and providing support every step of the
+            way.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thumbnail gallery -->
+    <div class="thumbnails">
+      <img src="/assets/img/trip5-small.jpg">
+      <img src="/assets/img/trip6-small.jpg">
+      <img src="/assets/img/trip7-small.jpg">
+      <img src="/assets/img/trip8-small.jpg">
+      <img src="/assets/img/trip9-small.jpg">
+      <img src="/assets/img/trip10-small.jpg">
+      <img src="/assets/img/trip11-small.jpg">
+      <img src="/assets/img/trip12-small.jpg">
+      <img src="/assets/img/trip2-small.jpg">
+      <img src="/assets/img/trip8-small.jpg">
+      <img src="/assets/img/trip9-small.jpg">
     </div>
-  {{/hero}}
 
-  <section class="centerColumn white">
-    <div>
-      <h2>About Us</h2>
+    <!-- Trip showcase  -->
+    <section class="centerColumn">
+      <div class="verticalLine"></div>
+      <h2>
+        Featured trips
+      </h2>
       <p class="subhead">
-        Transformative journeys, not just travel
+        for the coming year
       </p>
-      <p>
-        Whether you're scaling the majestic peaks of the Himalayas, exploring
-        the lush rainforests of the Amazon, or trekking through the pristine
-        wilderness of Patagonia, our expert guides ensure a safe, memorable,
-        and enriching adventure. Each of our expeditions is carefully crafted
-        to bring you closer to the heart of nature and the thrill of
-        exploration. Join us at Aventour Expeditions to discover new horizons,
-        challenge your limits, and create unforgettable memories in the great
-        outdoors.
+      {{> cards treks }}
+    </section>
+
+    <!-- Testimonial -->
+    <section class="callout">
+      <div class="background"></div>
+      <div class="centerColumn">
+        <blockquote>
+          Choosing Aventour Expeditions was the best decision. The breathtaking
+          landscapes of Patagonia were matched only by the expertise and warmth
+          of our guides. Every detail was taken care of, allowing us to immerse
+          ourselves in the experience and push our limits safely. It was truly a
+          life-changing journey, and I can't wait to embark on my next adventure
+          with Aventour!"
+          <em>— Emily Thompson</em>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="centerColumn white">
+      <div class="verticalLine"></div>
+      <h2>
+        Our fabulous team
+      </h2>
+      <p class="subhead">
+        A love for the outdoors
       </p>
-    </div>
-  </section>
-
-  <section class="centerColumn">
-    <div class="autoColumns">
-      <div class="sellingPoint">
-        <div class="icon pd-icon-sunrise"></div>
-        <h3>
-          Awesome destinations
-        </h3>
-        <p>
-          From the icy realms of Antarctica to the desert vistas of Morocco,
-          and from the volcanic trails of Iceland to the ancient pathways of
-          the Inca Trail in Peru, we offer an adventure for every explorer.
-        </p>
+      <div class="autoColumns">
+        <div class="person">
+          <img src="/assets/img/hiker1.jpg">
+          <div class="name">Berkely Keary</div>
+          <div class="country">Cairns, Australia</div>
+        </div>
+        <div class="person">
+          <img src="/assets/img/hiker2.jpg">
+          <div class="name">Jessica Simpson</div>
+          <div class="country">Chamonix-Mont-Blanc, France</div>
+        </div>
+        <div class="person">
+          <img src="/assets/img/hiker3.jpg">
+          <div class="name">Gilbert Patrick</div>
+          <div class="country">Kitzbühel, Austria</div>
+        </div>
       </div>
-      <div class="sellingPoint">
-        <div class="icon pd-icon-camping-knife"></div>
-        <h3>
-          Professional team
-        </h3>
-        <p>
-          Our guides and support staff are seasoned adventurers with extensive
-          local knowledge and trained in travel logistic, first aid, and
-          customer care.
-        </p>
-      </div>
-      <div class="sellingPoint">
-        <div class="icon pd-icon-camp-bag"></div>
-        <h3>
-          Complete support
-        </h3>
-        <p>
-          Our guides are with you long before you set foot on the trail, helping
-          you prepare for your journey and providing support every step of the
-          way.
-        </p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Thumbnail gallery -->
-  <div class="thumbnails">
-    <img src="/assets/img/trip5-small.jpg">
-    <img src="/assets/img/trip6-small.jpg">
-    <img src="/assets/img/trip7-small.jpg">
-    <img src="/assets/img/trip8-small.jpg">
-    <img src="/assets/img/trip9-small.jpg">
-    <img src="/assets/img/trip10-small.jpg">
-    <img src="/assets/img/trip11-small.jpg">
-    <img src="/assets/img/trip12-small.jpg">
-    <img src="/assets/img/trip2-small.jpg">
-    <img src="/assets/img/trip8-small.jpg">
-    <img src="/assets/img/trip9-small.jpg">
-  </div>
-
-  <!-- Trip showcase  -->
-  <section class="centerColumn">
-    <div class="verticalLine"></div>
-    <h2>
-      Featured trips
-    </h2>
-    <p class="subhead">
-      for the coming year
-    </p>
-    {{> cards @root }}
-  </section>
-
-  <!-- Testimonial -->
-  <section class="callout">
-    <div class="background"></div>
-    <div class="centerColumn">
-      <blockquote>
-        Choosing Aventour Expeditions was the best decision. The breathtaking
-        landscapes of Patagonia were matched only by the expertise and warmth
-        of our guides. Every detail was taken care of, allowing us to immerse
-        ourselves in the experience and push our limits safely. It was truly a
-        life-changing journey, and I can't wait to embark on my next adventure
-        with Aventour!"
-        <em>— Emily Thompson</em>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- Team -->
-  <section class="centerColumn white">
-    <div class="verticalLine"></div>
-    <h2>
-      Our fabulous team
-    </h2>
-    <p class="subhead">
-      A love for the outdoors
-    </p>
-    <div class="autoColumns">
-      <div class="person">
-        <img src="/assets/img/hiker1.jpg">
-        <div class="name">Berkely Keary</div>
-        <div class="country">Cairns, Australia</div>
-      </div>
-      <div class="person">
-        <img src="/assets/img/hiker2.jpg">
-        <div class="name">Jessica Simpson</div>
-        <div class="country">Chamonix-Mont-Blanc, France</div>
-      </div>
-      <div class="person">
-        <img src="/assets/img/hiker3.jpg">
-        <div class="name">Gilbert Patrick</div>
-        <div class="country">Kitzbühel, Austria</div>
-      </div>
-    </div>
-  </section>
-
-{{/page}}
+  {{/page}}
+{{/with}}

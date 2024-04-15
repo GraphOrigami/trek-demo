@@ -1,17 +1,19 @@
 <!-- Gallery page -->
-{{#> page title="Gallery" areaIsGallery=true}}
-  {{#> hero image="/assets/img/trips/trip9.jpg"}}
-    <h1>
-      Gallery
-    </h1>
-    <p class="tagline">
-      Wish you were here
-    </p>
-  {{/hero}}
-  <script src="/assets/js/gallery.js"></script>
-  <div class="gallery">
-    {{#each @root}}
-      <img src="/assets/img/trips/{{this}}">
-    {{/each}}
-  </div>
-{{/page}}
+{{#with this as |treks|}}
+  {{#> page title="Gallery" areaIsGallery=true}}
+    {{#> hero image="/assets/img/trips/trip9.jpg"}}
+      <h1>
+        Gallery
+      </h1>
+      <p class="tagline">
+        Wish you were here
+      </p>
+    {{/hero}}
+    <script src="/assets/js/gallery.js"></script>
+    <div class="gallery">
+      {{#each @treks}}
+        <img src="/assets/img/trips/{{this}}">
+      {{/each}}
+    </div>
+  {{/page}}
+{{/with}}

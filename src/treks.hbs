@@ -1,14 +1,16 @@
 <!-- Treks area page showing complete list of treks -->
-{{#> page title="Treks" areaIsTreks=true}}
-  {{#> hero image="/assets/img/trips/trip8.jpg"}}
-    <h1>
-      All Treks
-    </h1>
-    <p class="tagline">
-      Adventures for everyone
-    </p>
-  {{/hero}}
-  <section class="centerColumn">
-    {{> cards @root }}
-  </section>
-{{/page}}
+{{#with this as |treks|}}
+  {{#> page title="Treks" areaIsTreks=true}}
+    {{#> hero image="/assets/img/trips/trip8.jpg"}}
+      <h1>
+        All Treks
+      </h1>
+      <p class="tagline">
+        Adventures for everyone
+      </p>
+    {{/hero}}
+    <section class="centerColumn">
+      {{> cards treks }}
+    </section>
+  {{/page}}
+{{/with}}
