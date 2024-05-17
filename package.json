@@ -1,9 +1,9 @@
 {
-  "name": "trek-demo",
+  "name": "aventour-expeditions",
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.48",
+    "@weborigami/origami": "0.0.50",
     "@weborigami/handlebars": "0.0.1"
   },
   "scripts": {
