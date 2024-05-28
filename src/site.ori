@@ -3,9 +3,10 @@
   // front matter. We cross-link the trek data: for each document, we calculate
   // a `links` set containing the related treks. This lets an individual trek
   // page show tiles containing data for related treks.
-  trekData = @map(descriptions, (trek) => @merge(trek, {
+  trekData = @map(descriptions, (trek) => {
+    …trek,
     links: @map(trek/related, (relatedId) => descriptions(`${relatedId}.md`)/)
-  }))
+  })
 
   // Root of public site
   public = {
@@ -22,15 +23,13 @@
     gallery.html = gallery.hbs(@keys(assets/img/trips))
 
     // Treks area
-    treks = @merge(
+    treks = {
       // Generate an area index page listing all treks.
-      {
-        index.html = treks.hbs(trekData)
-      }
+      index.html = treks.hbs(trekData)
 
-      // Trek page pipeline converts markdown to HTML and applies a template;
-      // this will be applied to each trek we have data for.
-      trekData → @mapFn(@mdHtml) → @mapFn(trek.hbs)
-    )
+      // Add all the pages for individual treks. The trek page pipeline converts
+      // each markdown file to HTML and applies a template.
+      …(trekData → @mapFn(@mdHtml) → @mapFn(trek.hbs))
+    }
   }
 }
