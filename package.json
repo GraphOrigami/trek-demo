@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.59",
-    "@weborigami/handlebars": "0.0.2"
+    "@weborigami/origami": "0.0.72",
+    "@weborigami/handlebars": "0.0.4"
   },
   "scripts": {
-    "build": "ori @copy src/site.ori/public, @mkdir/build",
+    "build": "ori @copy src/site.ori/public, @files/build",
     "docs": "ori '@svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
     "start": "ori @serve @watch src, =@debug site.ori/public"
   }
