@@ -3,9 +3,9 @@
   // front matter. We cross-link the trek data: for each document, we calculate
   // a `links` set containing the related treks. This lets an individual trek
   // page show tiles containing data for related treks.
-  trekData = @map(descriptions, (trek) => {
+  trekData = map(descriptions, (trek) => {
     …trek,
-    links: @map(trek/related, (relatedId) => descriptions(`${relatedId}.md`)/)
+    links: map(trek/related, (relatedId) => scope:descriptions(`${relatedId}.md`)/)
   })
 
   // Root of public site
@@ -17,10 +17,10 @@
     contact.html = contact.hbs()
 
     // The index page shows just a few treks as "featured".
-    index.html = index.hbs(@take(trekData, 4))
+    index.html = index.hbs(take(trekData, 4))
 
     // Gallery page gets a list of the names of all the big images.
-    gallery.html = gallery.hbs(@keys(assets/img/trips))
+    gallery.html = gallery.hbs(keys(assets/img/trips))
 
     // Treks area
     treks = {
@@ -29,7 +29,7 @@
 
       // Add all the pages for individual treks. The trek page pipeline converts
       // each markdown file to HTML and applies a template.
-      …(trekData → @mapFn(@mdHtml) → @mapFn(trek.hbs))
+      …(trekData → =map(_, mdHtml) → =map(_, trek.hbs))
     }
   }
 }
