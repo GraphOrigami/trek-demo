@@ -7,7 +7,7 @@
     "@weborigami/handlebars": "0.0.5"
   },
   "scripts": {
-    "build": "ori copy src/site.ori/public, files:build",
+    "build": "ori copy src/site.ori/public, clear files:build",
     "docs": "ori 'svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
     "start": "ori serve watch src, =debug site.ori/public"
   }

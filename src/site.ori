@@ -5,7 +5,7 @@
   // page show tiles containing data for related treks.
   trekData = map(descriptions, (trek) => {
     …trek,
-    links: map(trek/related, (relatedId) => scope:descriptions(`${relatedId}.md`)/)
+    links: map(trek/related, (relatedId) => descriptions/(`${relatedId}.md`)/)
   })
 
   // Root of public site
